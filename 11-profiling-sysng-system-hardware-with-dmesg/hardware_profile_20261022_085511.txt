@@ -1,0 +1,85 @@
+=========================================
+    COMPREHENSIVE HARDWARE PROFILE
+=========================================
+Generated on: Thu Oct 22 08:55:11 UTC 2026
+Hostname: ip-172-31-10-253.ec2.internal
+Kernel: 5.14.0-654.el9.x86_64
+Architecture: x86_64
+
+--- CPU INFORMATION ---
+
+--- MEMORY INFORMATION ---
+[    0.510578] Memory: 15675200K/16609324K available (16384K kernel code, 5796K rwdata, 13908K rodata, 4196K init, 7200K bss, 929136K reserved, 0K cma-reserved)
+
+--- STORAGE DEVICES ---
+[    3.629113] nvme nvme1: pci function 0000:00:1f.0
+[    3.634042] nvme nvme0: pci function 0000:00:04.0
+[    3.649363] nvme nvme1: 2/0/0 default/read/poll queues
+[    3.652555] nvme nvme0: 2/0/0 default/read/poll queues
+[    3.659011]  nvme0n1: p1 p2 p3 p4
+[    4.466425] XFS (nvme0n1p4): Mounting V5 Filesystem 596343d2-9dab-4c86-9dd0-4a537eb34256
+[    4.554521] XFS (nvme0n1p4): Starting recovery (logdev: internal)
+[    4.869970] XFS (nvme0n1p4): Ending recovery (logdev: internal)
+[    9.713407] EXT4-fs (nvme0n1p3): recovery complete
+[    9.714750] EXT4-fs (nvme0n1p3): mounted filesystem 5c6d2636-1ce3-4997-bf2f-1d032b4db44e r/w with ordered data mode. Quota mode: none.
+[    9.768601] FAT-fs (nvme0n1p2): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[   17.990240] block nvme0n1: the capability attribute has been deprecated.
+
+--- NETWORK INTERFACES ---
+[    3.619517] ena 0000:00:05.0 ens5: renamed from eth0
+
+--- USB DEVICES ---
+[    0.581216] usbcore: registered new interface driver usbfs
+[    0.581241] usbcore: registered new interface driver hub
+[    0.581263] usbcore: registered new device driver usb
+[    2.026412] usbcore: registered new interface driver usbserial_generic
+[    2.037540] usbcore: registered new interface driver usbhid
+
+--- PCI DEVICES ---
+
+--- GRAPHICS/VIDEO ---
+[    0.000003] clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+[    0.288895] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x1fb5ecc9758, max_idle_ns: 440795206806 ns
+[    0.566838] pci 0000:00:03.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[    0.646837] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x1fb5ecc9758, max_idle_ns: 440795206806 ns
+[    2.030954] efifb: probing for efifb
+[    2.030972] efifb: framebuffer at 0xc0000000, using 1876k, total 1875k
+[    2.030981] efifb: mode is 800x600x32, linelength=3200, pages=1
+[    2.030990] efifb: scrolling: redraw
+[    2.030996] efifb: Truecolor: size=8:8:8:8, shift=24:16:8:0
+[    2.032468] fb0: EFI VGA frame buffer device
+
+--- AUDIO DEVICES ---
+
+--- POWER MANAGEMENT ---
+[    0.000000] BIOS-e820: [mem 0x00000000b3f4e000-0x00000000b3f5dfff] ACPI data
+[    0.000000] BIOS-e820: [mem 0x00000000b3f5e000-0x00000000b3fddfff] ACPI NVS
+[    0.000000] reserve setup_data: [mem 0x00000000b3f4e000-0x00000000b3f5dfff] ACPI data
+[    0.000000] reserve setup_data: [mem 0x00000000b3f5e000-0x00000000b3fddfff] ACPI NVS
+[    0.000000] efi: SMBIOS=0xb3e6a000 ACPI=0xb3f5d000 ACPI 2.0=0xb3f5d014 MEMATTR=0xb235f518 MOKvar=0xb3e59000 
+[    0.006543] ACPI: Early table checksum verification disabled
+[    0.006546] ACPI: RSDP 0x00000000B3F5D014 000024 (v02 AMAZON)
+[    0.006551] ACPI: XSDT 0x00000000B3F5C0E8 00006C (v01 AMAZON AMZNFACP 00000001      01000013)
+[    0.006557] ACPI: FACP 0x00000000B3F55000 000114 (v01 AMAZON AMZNFACP 00000001 AMZN 00000001)
+[    0.006564] ACPI: DSDT 0x00000000B3F56000 00115A (v01 AMAZON AMZNDSDT 00000001 AMZN 00000001)
+
+--- RECENT ERRORS/WARNINGS ---
+[    0.300960] Speculative Return Stack Overflow: IBPB-extending microcode not applied!
+[    0.301963] Speculative Return Stack Overflow: WARNING: See https://kernel.org/doc/html/latest/admin-guide/hw-vuln/srso.html for mitigation options.
+[    0.301965] x86/bugs: return thunk changed
+[    2.026747] i8042: Warning: Keylock active
+[    3.208596] device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+[    3.586435] ena 0000:00:05.0: LLQ is not supported Fallback to host mode policy.
+[    9.218177] piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+[    9.768601] FAT-fs (nvme0n1p2): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[   17.990240] block nvme0n1: the capability attribute has been deprecated.
+
+--- SYSTEM HEALTH SUMMARY ---
+Boot messages: 12
+Error messages: 1
+Warning messages: 8
+Hardware-related messages: 1
+
+=========================================
+    END OF HARDWARE PROFILE
+=========================================

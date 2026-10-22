@@ -1,0 +1,74 @@
+=== System Performance Monitor ===
+Timestamp: Tue Oct 20 14:20:01 UTC 2026
+Hostname: ip-172-31-10-17.ec2.internal
+
+=== CPU Information ===
+Linux 5.14.0-654.el9.x86_64 (ip-172-31-10-17.ec2.internal) 	10/20/26 	_x86_64_	(4 CPU)
+
+14:20:01        CPU     %user     %nice   %system   %iowait    %steal     %idle
+14:20:02        all      0.25      0.00      0.25      0.00      0.00     99.50
+14:20:03        all      0.50      0.00      0.75      0.00      0.00     98.75
+14:20:04        all      0.00      0.00      0.75      0.00      0.00     99.25
+Average:        all      0.25      0.00      0.58      0.00      0.00     99.17
+
+=== Memory Usage ===
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       1.1Gi        13Gi        22Mi       963Mi        14Gi
+Swap:             0B          0B          0B
+
+=== Disk I/O Statistics ===
+Linux 5.14.0-654.el9.x86_64 (ip-172-31-10-17.ec2.internal) 	10/20/26 	_x86_64_	(4 CPU)
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           2.69    0.02    1.55    0.73    0.00   95.01
+
+Device            r/s     rkB/s   rrqm/s  %rrqm r_await rareq-sz     w/s     wkB/s   wrqm/s  %wrqm w_await wareq-sz     d/s     dkB/s   drqm/s  %drqm d_await dareq-sz     f/s f_await  aqu-sz  %util
+nvme0n1         49.49   1697.57     1.25   2.46    1.23    34.30    7.25    428.16     1.71  19.11    1.51    59.04    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.07   3.94
+nvme1n1          0.30      7.15     0.00   0.00    0.63    23.78    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.00   0.01
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           0.50    0.00    0.50    0.00    0.00   99.00
+
+Device            r/s     rkB/s   rrqm/s  %rrqm r_await rareq-sz     w/s     wkB/s   wrqm/s  %wrqm w_await wareq-sz     d/s     dkB/s   drqm/s  %drqm d_await dareq-sz     f/s f_await  aqu-sz  %util
+nvme0n1          0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.00   0.00
+nvme1n1          0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.00   0.00
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           0.25    0.00    0.00    0.00    0.00   99.75
+
+Device            r/s     rkB/s   rrqm/s  %rrqm r_await rareq-sz     w/s     wkB/s   wrqm/s  %wrqm w_await wareq-sz     d/s     dkB/s   drqm/s  %drqm d_await dareq-sz     f/s f_await  aqu-sz  %util
+nvme0n1          0.00      0.00     0.00   0.00    0.00     0.00    2.00     12.00     1.00  33.33    1.00     6.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.00   0.10
+nvme1n1          0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.00   0.00
+
+
+
+=== Top 10 Processes by CPU ===
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+gdm         2267  0.7  0.7 1468156 126704 tty1   Sl+  14:12   0:03 /usr/libexec/dcv/dcvagent --session-id console --mode system --settings-path /etc/dcv/dcv.conf --log-dir /var/log/dcv --log-level INFO --log-rotate-at-startup
+dcv          837  0.6  0.3 885060 52912 ?        Sl   14:12   0:02 /usr/libexec/dcv/dcvserver --service
+gdm         1994  0.6  1.4 4333844 237136 tty1   Sl+  14:12   0:03 /usr/bin/gnome-shell
+root           1  0.5  0.1 175960 18372 ?        Ss   14:11   0:02 /usr/lib/systemd/systemd --switched-root --system --deserialize 28
+root          12  0.2  0.0      0     0 ?        I    14:11   0:01 [kworker/u16:1-events_unbound]
+root        1949  0.2  0.5 2304068 85124 tty1    Sl+  14:12   0:01 /usr/libexec/Xorg vt1 -displayfd 3 -auth /run/user/42/gdm/Xauthority -nolisten tcp -background none -noreset -keeptty -novtswitch -verbose 3
+cwagent     2470  0.2  0.7 1518624 114964 ?      Ssl  14:13   0:00 /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent -config /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.toml -envconfig /opt/aws/amazon-cloudwatch-agent/etc/env-config.json -otelconfig /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.yaml -pidfile /opt/aws/amazon-cloudwatch-agent/var/amazon-cloudwatch-agent.pid
+root         801  0.1  0.2 354544 44512 ?        Ssl  14:12   0:00 /usr/bin/python3 -s /usr/sbin/firewalld --nofork --nopid
+root        3908  0.1  0.1 483544 26088 ?        Ssl  14:19   0:00 /usr/libexec/packagekitd
+root           2  0.0  0.0      0     0 ?        S    14:11   0:00 [kthreadd]
+
+=== Top 10 Processes by Memory ===
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+gdm         1994  0.6  1.4 4333844 237136 tty1   Sl+  14:12   0:03 /usr/bin/gnome-shell
+gdm         2267  0.7  0.7 1468156 126704 tty1   Sl+  14:12   0:03 /usr/libexec/dcv/dcvagent --session-id console --mode system --settings-path /etc/dcv/dcv.conf --log-dir /var/log/dcv --log-level INFO --log-rotate-at-startup
+cwagent     2470  0.2  0.7 1518624 114964 ?      Ssl  14:13   0:00 /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent -config /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.toml -envconfig /opt/aws/amazon-cloudwatch-agent/etc/env-config.json -otelconfig /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.yaml -pidfile /opt/aws/amazon-cloudwatch-agent/var/amazon-cloudwatch-agent.pid
+root        1949  0.2  0.5 2304068 85124 tty1    Sl+  14:12   0:01 /usr/libexec/Xorg vt1 -displayfd 3 -auth /run/user/42/gdm/Xauthority -nolisten tcp -background none -noreset -keeptty -novtswitch -verbose 3
+dcv          837  0.6  0.3 885060 52912 ?        Sl   14:12   0:02 /usr/libexec/dcv/dcvserver --service
+root         801  0.1  0.2 354544 44512 ?        Ssl  14:12   0:00 /usr/bin/python3 -s /usr/sbin/firewalld --nofork --nopid
+root         988  0.0  0.1 484896 30000 ?        Ssl  14:12   0:00 /usr/bin/python3 -Es /usr/sbin/tuned -l -P
+gdm         2250  0.0  0.1 264016 28784 tty1     Sl+  14:12   0:00 /usr/libexec/dcv/dcvagentlauncher
+root        2044  0.0  0.1 483436 28136 ?        Ssl  14:12   0:00 /usr/bin/python3 -Es /usr/sbin/tuned-ppd -l
+gdm         2276  0.0  0.1 2932020 26452 tty1    Sl+  14:12   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+
+=== Load Average ===
+ 14:20:06 up 8 min,  1 user,  load average: 0.34, 0.23, 0.12

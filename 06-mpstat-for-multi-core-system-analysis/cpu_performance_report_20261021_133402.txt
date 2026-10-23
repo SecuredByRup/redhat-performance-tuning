@@ -1,0 +1,51 @@
+==========================================
+    CPU PERFORMANCE ANALYSIS REPORT
+==========================================
+Generated: Wed Oct 21 13:34:02 UTC 2026
+System: ip-172-31-10-44.ec2.internal
+Analyst: centos
+
+=== SYSTEM CONFIGURATION ===
+CPU Architecture:
+Architecture:                            x86_64
+CPU(s):                                  4
+On-line CPU(s) list:                     0-3
+Model name:                              AMD EPYC 7571
+Thread(s) per core:                      2
+Core(s) per socket:                      2
+Socket(s):                               1
+NUMA node0 CPU(s):                       0-3
+
+Memory Information:
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       1.3Gi        11Gi        19Mi       2.8Gi        13Gi
+Swap:             0B          0B          0B
+
+=== CURRENT PERFORMANCE METRICS ===
+System Load:
+ 13:34:02 up 35 min,  3 users,  load average: 0.10, 0.12, 0.25
+
+CPU Utilization (5-second average):
+Average:     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+Average:     all    0.75    0.00    1.05    0.00    0.25    0.10    0.30    0.00    0.00   97.55
+Average:       0    0.80    0.00    1.20    0.00    0.20    0.20    0.20    0.00    0.00   97.41
+Average:       1    1.00    0.00    0.80    0.00    0.40    0.20    0.40    0.00    0.00   97.19
+Average:       2    0.61    0.00    1.01    0.00    0.20    0.00    0.20    0.00    0.00   97.98
+Average:       3    0.60    0.00    1.20    0.00    0.20    0.00    0.40    0.00    0.00   97.60
+
+=== PERFORMANCE TEST RESULTS ===
+Running quick CPU stress test for analysis...
+Stress Test Results:
+Average:     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+Average:     all   25.24    0.00    0.91    0.00    0.41    0.05    0.26    0.00    0.00   73.12
+Average:       0   24.93    0.00    1.24    0.00    0.40    0.05    0.35    0.00    0.00   73.03
+Average:       1   25.68    0.00    0.65    0.00    0.55    0.00    0.25    0.00    0.00   72.87
+Average:       2   25.20    0.00    1.06    0.00    0.35    0.05    0.30    0.00    0.00   73.04
+Average:       3   25.18    0.00    0.70    0.00    0.35    0.10    0.15    0.00    0.00   73.52
+
+=== ANALYSIS AND RECOMMENDATIONS ===
+1. Current load distribution is stable across active virtual processors.
+2. Use './cpu_dashboard.sh' for real-time tracking when troubleshooting spikes.
+3. Automated logging can be established via setup_monitoring.sh.
+
+Report generation completed: Wed Oct 21 13:34:27 UTC 2026

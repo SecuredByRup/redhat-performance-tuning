@@ -1,0 +1,34 @@
+Linux 5.14.0-654.el9.x86_64 (ip-172-31-10-44.ec2.internal) 	10/21/26 	_x86_64_	(4 CPU)
+
+13:19:47     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+13:19:48       2   92.08    0.00    1.98    0.00    0.99    0.00    4.95    0.00    0.00    0.00
+
+13:19:48     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+13:19:49       2   95.96    0.00    1.01    0.00    1.01    0.00    2.02    0.00    0.00    0.00
+
+13:19:49     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+13:19:50       2   95.05    0.00    0.99    0.00    0.99    0.00    2.97    0.00    0.00    0.00
+
+13:19:50     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+13:19:51       2   96.97    0.00    0.00    0.00    0.00    1.01    2.02    0.00    0.00    0.00
+
+13:19:51     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+13:19:52       2   92.08    0.00    1.98    0.00    1.98    0.00    3.96    0.00    0.00    0.00
+
+13:19:52     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+13:19:53       2   96.00    0.00    1.00    0.00    0.00    0.00    3.00    0.00    0.00    0.00
+
+13:19:53     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+13:19:54       2   96.00    0.00    1.00    0.00    1.00    0.00    2.00    0.00    0.00    0.00
+
+13:19:54     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+13:19:55       2   94.95    0.00    1.01    0.00    1.01    0.00    3.03    0.00    0.00    0.00
+
+13:19:55     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+13:19:56       2   95.05    0.00    0.99    0.00    0.99    0.00    2.97    0.00    0.00    0.00
+
+13:19:56     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+13:19:57       2   94.00    0.00    2.00    0.00    1.00    0.00    3.00    0.00    0.00    0.00
+
+Average:     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+Average:       2   94.81    0.00    1.20    0.00    0.90    0.10    3.00    0.00    0.00    0.00

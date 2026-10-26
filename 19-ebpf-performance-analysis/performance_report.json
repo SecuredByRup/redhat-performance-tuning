@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-10-25T10:10:10.153538",
+  "system_calls": {
+    "total_calls": 44524,
+    "unique_syscalls": 10,
+    "top_syscalls": {
+      "openat": 7421,
+      "close": 5771,
+      "ppoll": 5314,
+      "mmap": 4721,
+      "read": 4655,
+      "fstat": 4137,
+      "recvmsg": 4086,
+      "write": 3780,
+      "recvfrom": 2693,
+      "rt_sigprocmask": 1946
+    }
+  },
+  "dns_performance": {
+    "total_queries": 43,
+    "average_latency": 1.9723255813953489,
+    "median_latency": 0.97,
+    "max_latency": 25.37,
+    "min_latency": 0.01,
+    "slow_queries_count": 0,
+    "hosts_queried": 8
+  },
+  "performance_issues": [
+    {
+      "type": "high_io",
+      "description": "High I/O activity detected: 18343 I/O system calls",
+      "severity": "medium"
+    }
+  ],
+  "recommendations": [
+    {
+      "category": "general",
+      "recommendation": "No significant performance issues detected during this monitoring window",
+      "priority": "info"
+    }
+  ]
+}

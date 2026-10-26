@@ -1,0 +1,34 @@
+=== System Baseline Report ===
+Date: $(date)
+
+CPU Information:
+CPU(s):                                  4
+On-line CPU(s) list:                     0-3
+Model name:                              AMD EPYC 7571
+Thread(s) per core:                      2
+Core(s) per socket:                      2
+NUMA node0 CPU(s):                       0-3
+
+Memory Information:
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       976Mi        13Gi        20Mi       644Mi        14Gi
+Swap:             0B          0B          0B
+
+Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        7.5G     0  7.5G   0% /dev
+tmpfs           7.7G     0  7.7G   0% /dev/shm
+tmpfs           3.1G   18M  3.1G   1% /run
+efivarfs        128K  4.1K  119K   4% /sys/firmware/efi/efivars
+/dev/nvme0n1p4   29G  8.3G   21G  29% /
+/dev/nvme0n1p3  966M  800M  100M  89% /boot
+/dev/nvme0n1p2  500M   11M  489M   3% /boot/efi
+tmpfs           1.6G   52K  1.6G   1% /run/user/42
+tmpfs           1.6G   36K  1.6G   1% /run/user/1001
+
+Current Load:
+ 16:17:36 up 3 min,  1 user,  load average: 0.06, 0.10, 0.04
+ 16:17:36 up 3 min,  1 user,  load average: 0.06, 0.10, 0.04
+ 16:17:37 up 3 min,  1 user,  load average: 0.06, 0.10, 0.04
+ 16:17:37 up 3 min,  1 user,  load average: 0.06, 0.10, 0.04
+ 16:17:38 up 3 min,  1 user,  load average: 0.05, 0.10, 0.04

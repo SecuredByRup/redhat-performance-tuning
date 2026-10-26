@@ -1,0 +1,79 @@
+Linux 5.14.0-654.el9.x86_64 (ip-172-31-10-190.ec2.internal) 	10/25/26 	_x86_64_	(4 CPU)
+
+10:25:26        CPU     %user     %nice   %system   %iowait    %steal     %idle
+10:25:31        all      1.25      0.00      2.55      0.00      0.15     96.05
+
+10:25:26    kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+10:25:31     14550628  14902172    670620      4.21      4568    582752   4613964     28.94    895492    117768        68
+
+10:25:31        CPU     %user     %nice   %system   %iowait    %steal     %idle
+10:25:36        all      0.40      0.00      0.50      0.00      0.15     98.95
+
+10:25:31    kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+10:25:36     14552896  14904488    668300      4.19      4568    582800   4612512     28.93    894728    117816        48
+
+10:25:36        CPU     %user     %nice   %system   %iowait    %steal     %idle
+10:25:41        all      0.40      0.00      0.25      0.00      0.00     99.35
+
+10:25:36    kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+10:25:41     14563732  14915324    657464      4.12      4568    582800   4566816     28.64    884132    117816         8
+
+10:25:41        CPU     %user     %nice   %system   %iowait    %steal     %idle
+10:25:46        all      0.60      0.00      7.24      0.00      0.15     92.01
+
+10:25:41    kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+10:25:46     14221336  14573052    999684      6.27      4568    582876   4578624     28.71    886672    117836         8
+
+10:25:46        CPU     %user     %nice   %system   %iowait    %steal     %idle
+10:25:51        all      0.85      0.00      1.25      0.00      0.15     97.74
+
+10:25:46    kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+10:25:51     14219348  14571064   1001668      6.28      4568    582876   4612512     28.93    894780    117836         4
+
+10:25:51        CPU     %user     %nice   %system   %iowait    %steal     %idle
+10:25:56        all      0.35      0.00      0.60      0.00      0.05     99.00
+
+10:25:51    kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+10:25:56     14220860  14572576   1000148      6.27      4568    582880   4612512     28.93    894780    117836        24
+
+10:25:56        CPU     %user     %nice   %system   %iowait    %steal     %idle
+10:26:01        all      0.50      0.00      0.45      0.00      0.00     99.05
+
+10:25:56    kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+10:26:01     14231476  14583196    989528      6.21      4568    582880   4575168     28.69    884344    117840        32
+
+10:26:01        CPU     %user     %nice   %system   %iowait    %steal     %idle
+10:26:06        all      0.70      0.00      1.55      0.00      0.10     97.65
+
+10:26:01    kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+10:26:06     14237020  14588772    983932      6.17      4568    582900   4586976     28.77    887076    117860        52
+
+10:26:06        CPU     %user     %nice   %system   %iowait    %steal     %idle
+10:26:11        all      1.00      0.00      1.70      0.00      0.10     97.20
+
+10:26:06    kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+10:26:11     14237292  14589048    983648      6.17      4568    582904   4620864     28.98    894944    117864        56
+
+10:26:11        CPU     %user     %nice   %system   %iowait    %steal     %idle
+10:26:16        all      0.30      0.00      0.30      0.00      0.05     99.35
+
+10:26:11    kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+10:26:16     14240064  14591820    980876      6.15      4568    582904   4609440     28.91    892420    117864        56
+
+10:26:16        CPU     %user     %nice   %system   %iowait    %steal     %idle
+10:26:21        all      0.30      0.00      0.45      0.00      0.00     99.25
+
+10:26:16    kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+10:26:21     14248324  14600088    972608      6.10      4568    582912   4574760     28.69    884392    117872        64
+
+10:26:21        CPU     %user     %nice   %system   %iowait    %steal     %idle
+10:26:26        all      0.50      0.00      0.30      0.00      0.15     99.05
+
+10:26:21    kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+10:26:26     14253168  14604936    967788      6.07      4568    582912   4544652     28.50    879504    117876        48
+
+Average:        CPU     %user     %nice   %system   %iowait    %steal     %idle
+Average:        all      0.60      0.00      1.43      0.00      0.09     97.89
+
+Average:    kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+Average:     14314679  14666378    906355      5.68      4568    582866   4592400     28.80    889439    117840        39

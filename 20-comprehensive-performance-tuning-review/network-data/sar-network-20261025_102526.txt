@@ -1,0 +1,53 @@
+Linux 5.14.0-654.el9.x86_64 (ip-172-31-10-190.ec2.internal) 	10/25/26 	_x86_64_	(4 CPU)
+
+10:25:26        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+10:25:31           lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+10:25:31         ens5     32.20     30.20      5.20      4.01      0.00      0.00      0.00      0.00
+
+10:25:31        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+10:25:36           lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+10:25:36         ens5      6.80      7.00      2.14      2.12      0.00      0.00      0.00      0.00
+
+10:25:36        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+10:25:41           lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+10:25:41         ens5      8.60      8.20      1.65      1.88      0.00      0.00      0.00      0.00
+
+10:25:41        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+10:25:46           lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+10:25:46         ens5     30.20     29.60      3.15      3.07      0.00      0.00      0.00      0.00
+
+10:25:46        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+10:25:51           lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+10:25:51         ens5     14.80     16.00      4.00      4.05      0.00      0.00      0.00      0.00
+
+10:25:51        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+10:25:56           lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+10:25:56         ens5      8.00      7.60      2.21      2.16      0.00      0.00      0.00      0.00
+
+10:25:56        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+10:26:01           lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+10:26:01         ens5     19.20     18.80      4.96      3.69      0.00      0.00      0.00      0.00
+
+10:26:01        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+10:26:06           lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+10:26:06         ens5     25.00     23.20      2.88      3.35      0.00      0.00      0.00      0.00
+
+10:26:06        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+10:26:11           lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+10:26:11         ens5     14.80     14.60      3.36      2.58      0.00      0.00      0.00      0.00
+
+10:26:11        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+10:26:16           lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+10:26:16         ens5      7.40      7.20      2.33      2.19      0.00      0.00      0.00      0.00
+
+10:26:16        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+10:26:21           lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+10:26:21         ens5     10.00     10.20      1.77      2.83      0.00      0.00      0.00      0.00
+
+10:26:21        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+10:26:26           lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+10:26:26         ens5      3.60      3.20      0.68      1.00      0.00      0.00      0.00      0.00
+
+Average:        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+Average:           lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:         ens5     15.05     14.65      2.86      2.74      0.00      0.00      0.00      0.00

@@ -1,0 +1,48 @@
+=== Monitoring iteration 1 ===
+Time: Mon Oct 26 10:23:20 UTC 2026
+Load:  0.01, 0.20, 0.21
+CPU usage:
+%Cpu(s): 25.7 us, 22.9 sy,  0.0 ni, 44.3 id,  5.7 wa,  1.4 hi,  0.0 si,  0.0 st
+Memory usage:
+Mem:            15Gi       828Mi        13Gi        19Mi       1.1Gi        14Gi
+---
+=== Monitoring iteration 2 ===
+Time: Mon Oct 26 10:23:26 UTC 2026
+Load:  0.17, 0.24, 0.22
+CPU usage:
+%Cpu(s): 25.4 us, 26.9 sy,  0.0 ni, 46.3 id,  0.0 wa,  1.5 hi,  0.0 si,  0.0 st
+Memory usage:
+Mem:            15Gi       1.0Gi        13Gi        19Mi       1.1Gi        14Gi
+---
+=== Monitoring iteration 3 ===
+Time: Mon Oct 26 10:23:31 UTC 2026
+Load:  0.32, 0.26, 0.23
+CPU usage:
+%Cpu(s): 25.4 us, 26.9 sy,  0.0 ni, 46.3 id,  0.0 wa,  1.5 hi,  0.0 si,  0.0 st
+Memory usage:
+Mem:            15Gi       986Mi        13Gi        19Mi       1.0Gi        14Gi
+---
+=== Monitoring iteration 4 ===
+Time: Mon Oct 26 10:23:36 UTC 2026
+Load:  0.45, 0.29, 0.24
+CPU usage:
+%Cpu(s): 24.6 us, 27.5 sy,  0.0 ni, 44.9 id,  0.0 wa,  1.4 hi,  1.4 si,  0.0 st
+Memory usage:
+Mem:            15Gi       946Mi        13Gi        19Mi       1.1Gi        14Gi
+---
+=== Monitoring iteration 5 ===
+Time: Mon Oct 26 10:23:41 UTC 2026
+Load:  0.58, 0.32, 0.25
+CPU usage:
+%Cpu(s): 25.4 us, 26.9 sy,  0.0 ni, 46.3 id,  0.0 wa,  0.0 hi,  1.5 si,  0.0 st
+Memory usage:
+Mem:            15Gi       969Mi        13Gi        19Mi       1.1Gi        14Gi
+---
+=== Monitoring iteration 6 ===
+Time: Mon Oct 26 10:23:46 UTC 2026
+Load:  0.69, 0.35, 0.26
+CPU usage:
+%Cpu(s): 26.5 us, 27.9 sy,  0.0 ni, 45.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+Memory usage:
+Mem:            15Gi       1.1Gi        13Gi        19Mi       1.0Gi        14Gi
+---

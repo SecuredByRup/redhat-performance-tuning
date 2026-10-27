@@ -1,0 +1,61 @@
+# dmidecode 3.6
+Getting SMBIOS data from sysfs.
+SMBIOS 2.7 present.
+
+Handle 0x0000, DMI type 0, 24 bytes
+Platform Firmware Information
+	Vendor: Amazon EC2
+	Version: 1.0
+	Release Date: 10/16/2017
+	Address: 0xF0000
+	Runtime Size: 64 KiB
+	ROM Size: 64 KiB
+	Characteristics:
+		PCI is supported
+		EDD is supported
+		ACPI is supported
+		Targeted content distribution is supported
+		System is a virtual machine
+	Platform Firmware Revision: 1.0
+
+Handle 0x0001, DMI type 1, 27 bytes
+System Information
+	Manufacturer: Amazon EC2
+	Product Name: t3a.xlarge
+	Version: Not Specified
+	Serial Number: ec22f62b-6a33-bca8-c085-69af67296b55
+	UUID: ec22f62b-6a33-bca8-c085-69af67296b55
+	Wake-up Type: Power Switch
+	SKU Number: Not Specified
+	Family: Not Specified
+
+Handle 0x0002, DMI type 2, 15 bytes
+Base Board Information
+	Manufacturer: Amazon EC2
+	Product Name: Not Specified
+	Version: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: i-0ca35ff4151512da1
+	Features: None
+	Location In Chassis: Not Specified
+	Chassis Handle: 0x0003
+	Type: Other
+	Contained Object Handles: 0
+
+Handle 0x0003, DMI type 3, 21 bytes
+Chassis Information
+	Manufacturer: Amazon EC2
+	Type: Other
+	Lock: Not Present
+	Version: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Amazon EC2
+	Boot-up State: Safe
+	Power Supply State: Safe
+	Thermal State: Safe
+	Security Status: None
+	OEM Information: 0x00000000
+	Height: Unspecified
+	Number Of Power Cords: 1
+	Contained Elements: 0
+

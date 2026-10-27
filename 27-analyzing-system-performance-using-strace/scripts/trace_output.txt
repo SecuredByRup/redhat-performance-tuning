@@ -1,0 +1,45 @@
+execve("./simple_program", ["./simple_program"], 0x7ffdf26c6360 /* 48 vars */) = 0
+brk(NULL)                               = 0x1d7c000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe68f16480) = -1 EINVAL (Invalid argument)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd7d92e6000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=43243, ...}) = 0
+mmap(NULL, 43243, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fd7d92db000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\247\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0r-\325\247v\2\267X\240o&\343\2\346_q"..., 68, 896) = 68
+fstat(3, {st_mode=S_IFREG|0755, st_size=2553784, ...}) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 2142160, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd7d9000000
+mmap(0x7fd7d9029000, 1531904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x29000) = 0x7fd7d9029000
+mmap(0x7fd7d919f000, 364544, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19f000) = 0x7fd7d919f000
+mmap(0x7fd7d91f8000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1f7000) = 0x7fd7d91f8000
+mmap(0x7fd7d91fe000, 53200, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fd7d91fe000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd7d92d8000
+arch_prctl(ARCH_SET_FS, 0x7fd7d92d8740) = 0
+set_tid_address(0x7fd7d92d8a10)         = 11870
+set_robust_list(0x7fd7d92d8a20, 24)     = 0
+rseq(0x7fd7d92d90e0, 0x20, 0, 0x53053053) = 0
+mprotect(0x7fd7d91f8000, 16384, PROT_READ) = 0
+mprotect(0x403000, 4096, PROT_READ)     = 0
+mprotect(0x7fd7d931f000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x7fd7d92db000, 43243)           = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+getrandom("\xa8\x7a\x00\xe8\x69\x90\xa2\x04", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x1d7c000
+brk(0x1d9d000)                          = 0x1d9d000
+write(1, "Starting simple program...\n", 27) = 27
+openat(AT_FDCWD, "/etc/passwd", O_RDONLY) = 3
+read(3, "root:x:0:0:root:/root:/bin/bash\n"..., 100) = 100
+close(3)                                = 0
+write(1, "File operation completed\n", 25) = 25
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=2, tv_nsec=0}, 0x7ffe68f163d0) = 0
+write(1, "Program finished\n", 17)      = 17
+exit_group(0)                           = ?
++++ exited with 0 +++

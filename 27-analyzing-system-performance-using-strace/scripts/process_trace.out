@@ -1,0 +1,22 @@
+execve("./test_app", ["./test_app"], 0x7ffc8a4ee3f0 /* 48 vars */) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f524cc61a10) = 18158
+wait4(-1, total 4
+drwxrwxrwt. 13 root root 4096 Oct 27 10:04 .
+drwxr-xr-x. 20 root root  259 Sep 12 11:56 ..
+drwxrwxrwt.  2 root root   18 Oct 27 09:48 .ICE-unix
+drwxrwxrwt.  2 root root   16 Oct 27 09:48 .X11-unix
+srwxrwxrwx.  1 gdm  gdm     0 Oct 27 09:48 dbus-Yaho6iF0Ce
+drwxr-xr-x.  2 root root   18 Oct 27 09:54 hsperfdata_root
+drwx------.  3 root root   17 Oct 27 09:48 systemd-private-e9559179382a4a078dbc8eb52a08d4da-chronyd.service-HzIIrq
+drwx------.  3 root root   17 Oct 27 09:48 systemd-private-e9559179382a4a078dbc8eb52a08d4da-colord.service-ElkKVb
+drwx------.  3 root root   17 Oct 27 09:48 systemd-private-e9559179382a4a078dbc8eb52a08d4da-dbus-broker.service-AnPWQb
+drwx------.  3 root root   17 Oct 27 09:48 systemd-private-e9559179382a4a078dbc8eb52a08d4da-irqbalance.service-9gIEtt
+drwx------.  3 root root   17 Oct 27 09:48 systemd-private-e9559179382a4a078dbc8eb52a08d4da-kdump.service-kwEkwq
+drwx------.  3 root root   17 Oct 27 09:48 systemd-private-e9559179382a4a078dbc8eb52a08d4da-rtkit-daemon.service-6qMaBT
+drwx------.  3 root root   17 Oct 27 09:48 systemd-private-e9559179382a4a078dbc8eb52a08d4da-systemd-logind.service-G1rS2E
+drwx------.  3 root root   17 Oct 27 09:48 systemd-private-e9559179382a4a078dbc8eb52a08d4da-upower.service-uUpmko
+NULL, 0, NULL)                = 18158
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=18158, si_uid=1001, si_status=0, si_utime=0, si_stime=0} ---
+Child process completed
+exit_group(0)                           = ?
++++ exited with 0 +++

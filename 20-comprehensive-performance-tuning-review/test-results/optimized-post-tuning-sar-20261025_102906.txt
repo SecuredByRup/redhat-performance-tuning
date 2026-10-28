@@ -1,0 +1,14 @@
+Linux 5.14.0-654.el9.x86_64 (ip-172-31-10-190.ec2.internal) 	10/25/26 	_x86_64_	(4 CPU)
+
+10:29:06        CPU     %user     %nice   %system   %iowait    %steal     %idle
+10:29:11        all      0.40      0.00      0.40      0.00      0.10     99.10
+
+10:29:06    kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+10:29:11     14712788  14789996    806000      5.05       284    332116   4547440     28.52    731936      9856        28
+
+
+Average:        CPU     %user     %nice   %system   %iowait    %steal     %idle
+Average:        all      0.40      0.00      0.40      0.00      0.10     99.10
+
+Average:    kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+Average:     14712788  14789996    806000      5.05       284    332116   4547440     28.52    731936      9856        28

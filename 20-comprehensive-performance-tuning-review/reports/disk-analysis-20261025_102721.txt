@@ -1,0 +1,54 @@
+=== Disk I/O Performance Analysis Report ===
+Generated on: Sun Oct 25 10:27:21 UTC 2026
+
+1. Current Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        7.5G     0  7.5G   0% /dev
+tmpfs           7.7G     0  7.7G   0% /dev/shm
+tmpfs           3.1G   18M  3.1G   1% /run
+efivarfs        128K  4.1K  119K   4% /sys/firmware/efi/efivars
+/dev/nvme0n1p4   29G  8.3G   21G  29% /
+/dev/nvme0n1p3  966M  800M  100M  89% /boot
+/dev/nvme0n1p2  500M   11M  489M   3% /boot/efi
+tmpfs           1.6G   56K  1.6G   1% /run/user/42
+tmpfs           1.6G   36K  1.6G   1% /run/user/1001
+
+2. Disk I/O Statistics:
+Linux 5.14.0-654.el9.x86_64 (ip-172-31-10-190.ec2.internal) 	10/25/26 	_x86_64_	(4 CPU)
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           1.68    0.01    2.09    0.90    0.14   95.18
+
+Device            r/s     rkB/s   rrqm/s  %rrqm r_await rareq-sz     w/s     wkB/s   wrqm/s  %wrqm w_await wareq-sz     d/s     dkB/s   drqm/s  %drqm d_await dareq-sz     f/s f_await  aqu-sz  %util
+nvme0n1         47.17   1639.56     1.55   3.19    1.65    34.76    4.37     91.16     1.45  24.87    1.17    20.85    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.08   4.59
+nvme1n1          0.38      8.92     0.00   0.00    0.63    23.78    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.00   0.02
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           0.25    0.00    1.25    0.00    0.00   98.50
+
+Device            r/s     rkB/s   rrqm/s  %rrqm r_await rareq-sz     w/s     wkB/s   wrqm/s  %wrqm w_await wareq-sz     d/s     dkB/s   drqm/s  %drqm d_await dareq-sz     f/s f_await  aqu-sz  %util
+nvme0n1          0.00      0.00     0.00   0.00    0.00     0.00    1.00      4.00     0.00   0.00    1.00     4.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.00   0.10
+nvme1n1          0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.00   0.00
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           0.50    0.00    0.25    0.00    0.50   98.75
+
+Device            r/s     rkB/s   rrqm/s  %rrqm r_await rareq-sz     w/s     wkB/s   wrqm/s  %wrqm w_await wareq-sz     d/s     dkB/s   drqm/s  %drqm d_await dareq-sz     f/s f_await  aqu-sz  %util
+nvme0n1          0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.00   0.00
+nvme1n1          0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.00   0.00
+
+
+
+3. Recent Disk Activity:
+Linux 5.14.0-654.el9.x86_64 (ip-172-31-15-216.ec2.internal) 	10/25/26 	_x86_64_	(4 CPU)
+
+10:20:54     LINUX RESTART	(4 CPU)
+
+4. Disk Performance Analysis:
+Root filesystem usage: 29%
+- Disk usage is within acceptable range
+
+5. I/O Wait Analysis:
+Average I/O Wait: 0.00%

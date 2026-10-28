@@ -1,0 +1,75 @@
+=== System Performance Analysis ===
+Timestamp: Fri Oct 23 11:27:43 UTC 2026
+
+CPU Usage:
+Linux 5.14.0-654.el9.x86_64 (ip-172-31-10-15.ec2.internal) 	10/23/26 	_x86_64_	(4 CPU)
+
+11:27:43     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+11:27:44     all    0.50    0.00    0.00    0.00    0.00    0.25    0.00    0.00    0.00   99.25
+11:27:45     all    0.50    0.00    0.25    0.00    0.00    0.00    0.75    0.00    0.00   98.50
+11:27:46     all    0.25    0.00    0.25    0.00    0.00    0.00    0.00    0.00    0.00   99.50
+11:27:47     all    0.50    0.00    0.25    0.00    0.00    0.25    0.00    0.00    0.00   99.00
+11:27:48     all    0.50    0.00    0.25    0.00    0.50    0.00    0.00    0.00    0.00   98.75
+Average:     all    0.45    0.00    0.20    0.00    0.10    0.10    0.15    0.00    0.00   99.00
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       1.2Gi        13Gi        20Mi       1.0Gi        13Gi
+Swap:             0B          0B          0B
+
+System Load:
+ 11:27:48 up 33 min,  1 user,  load average: 0.04, 0.20, 0.16
+
+Top Processes by CPU:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root       16526  1.1  0.6 565296 97104 ?        Ssl  11:26   0:01 /usr/libexec/packagekitd
+dcv          830  0.9  0.3 885192 52844 ?        Sl   10:53   0:18 /usr/libexec/dcv/dcvserver --service
+gdm         2255  0.9  0.8 1467360 141340 tty1   Sl+  10:54   0:19 /usr/libexec/dcv/dcvagent --session-id console --mode system --settings-path /etc/dcv/dcv.conf --log-dir /var/log/dcv --log-level INFO --log-rotate-at-startup
+cwagent     2462  0.3  0.7 1453016 121804 ?      Ssl  10:55   0:05 /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent -config /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.toml -envconfig /opt/aws/amazon-cloudwatch-agent/etc/env-config.json -otelconfig /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.yaml -pidfile /opt/aws/amazon-cloudwatch-agent/var/amazon-cloudwatch-agent.pid
+root        1945  0.2  0.5 2302644 84088 tty1    Sl+  10:54   0:05 /usr/libexec/Xorg vt1 -displayfd 3 -auth /run/user/42/gdm/Xauthority -nolisten tcp -background none -noreset -keeptty -novtswitch -verbose 3
+root           1  0.1  0.1 175960 18588 ?        Ss   10:53   0:03 /usr/lib/systemd/systemd --switched-root --system --deserialize 28
+gdm         1990  0.1  1.5 4332584 250096 tty1   Sl+  10:54   0:03 /usr/bin/gnome-shell
+centos      2549  0.1  0.0 225288  6108 pts/0    Ss+  10:57   0:03 -bash
+root           2  0.0  0.0      0     0 ?        S    10:53   0:00 [kthreadd]
+
+Top Processes by Memory:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+gdm         1990  0.1  1.5 4332584 250096 tty1   Sl+  10:54   0:03 /usr/bin/gnome-shell
+gdm         2255  0.9  0.8 1467360 141340 tty1   Sl+  10:54   0:19 /usr/libexec/dcv/dcvagent --session-id console --mode system --settings-path /etc/dcv/dcv.conf --log-dir /var/log/dcv --log-level INFO --log-rotate-at-startup
+cwagent     2462  0.3  0.7 1453016 121804 ?      Ssl  10:55   0:05 /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent -config /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.toml -envconfig /opt/aws/amazon-cloudwatch-agent/etc/env-config.json -otelconfig /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.yaml -pidfile /opt/aws/amazon-cloudwatch-agent/var/amazon-cloudwatch-agent.pid
+root       16526  1.1  0.6 565296 97104 ?        Ssl  11:26   0:01 /usr/libexec/packagekitd
+root        1945  0.2  0.5 2302644 84088 tty1    Sl+  10:54   0:05 /usr/libexec/Xorg vt1 -displayfd 3 -auth /run/user/42/gdm/Xauthority -nolisten tcp -background none -noreset -keeptty -novtswitch -verbose 3
+dcv          830  0.9  0.3 885192 52844 ?        Sl   10:53   0:18 /usr/libexec/dcv/dcvserver --service
+root         801  0.0  0.2 354548 44900 ?        Ssl  10:53   0:00 /usr/bin/python3 -s /usr/sbin/firewalld --nofork --nopid
+root         970  0.0  0.1 484896 30040 ?        Ssl  10:54   0:00 /usr/bin/python3 -Es /usr/sbin/tuned -l -P
+gdm         2233  0.0  0.1 264008 28796 tty1     Sl+  10:54   0:00 /usr/libexec/dcv/dcvagentlauncher
+
+Network Connections:
+Active network connections: 9
+
+Disk I/O Statistics:
+Linux 5.14.0-654.el9.x86_64 (ip-172-31-10-15.ec2.internal) 	10/23/26 	_x86_64_	(4 CPU)
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           1.25    0.02    1.64    1.26    0.15   95.67
+
+Device            r/s     rkB/s   rrqm/s  %rrqm r_await rareq-sz     w/s     wkB/s   wrqm/s  %wrqm w_await wareq-sz     d/s     dkB/s   drqm/s  %drqm d_await dareq-sz     f/s f_await  aqu-sz  %util
+nvme0n1         59.24    872.37     0.30   0.51    1.56    14.73    5.58    774.61     0.67  10.79    9.47   138.83    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.15   3.16
+nvme1n1          0.07      1.73     0.00   0.00    0.65    23.78    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.00   0.00
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           0.25    0.00    0.25    0.00    0.00   99.50
+
+Device            r/s     rkB/s   rrqm/s  %rrqm r_await rareq-sz     w/s     wkB/s   wrqm/s  %wrqm w_await wareq-sz     d/s     dkB/s   drqm/s  %drqm d_await dareq-sz     f/s f_await  aqu-sz  %util
+nvme0n1          0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.00   0.00
+nvme1n1          0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.00   0.00
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           0.25    0.00    0.25    0.00    0.00   99.50
+
+Device            r/s     rkB/s   rrqm/s  %rrqm r_await rareq-sz     w/s     wkB/s   wrqm/s  %wrqm w_await wareq-sz     d/s     dkB/s   drqm/s  %drqm d_await dareq-sz     f/s f_await  aqu-sz  %util
+nvme0n1          0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.00   0.00
+nvme1n1          0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.00   0.00
+
+

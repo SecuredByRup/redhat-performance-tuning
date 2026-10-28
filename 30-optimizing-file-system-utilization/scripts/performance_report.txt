@@ -1,0 +1,48 @@
+=========================================
+FILE SYSTEM PERFORMANCE COMPARISON REPORT
+=========================================
+Generated on: Wed Oct 28 10:40:07 UTC 2026
+
+1. MOUNT OPTIONS COMPARISON
+----------------------------
+EXT4 Mount Options:
+(rw,noatime,nodiratime,seclabel,nobarrier,commit=60,stripe=64,data=writeback)
+
+XFS Mount Options:
+(rw,noatime,nodiratime,seclabel,attr2,largeio,inode64,logbufs=8,logbsize=256k,noquota)
+
+BTRFS Mount Options:
+(rw,noatime,nodiratime,seclabel)
+
+2. DISK USAGE COMPARISON
+------------------------
+/dev/loop1      974M   80K  907M   1% /mnt/ext4-tuned
+/dev/loop2      960M   40M  921M   5% /mnt/xfs-tuned
+/dev/loop3      974M   64K  907M   1% /mnt/btrfs-tuned
+
+3. FILE SYSTEM FEATURES
+-----------------------
+EXT4 Features:
+Filesystem features:      has_journal ext_attr resize_inode dir_index filetype needs_recovery extent 64bit flex_bg sparse_super large_file huge_file dir_nlink extra_isize metadata_csum
+
+XFS Features:
+meta-data=/dev/loop2             isize=512    agcount=4, agsize=65536 blks
+         =                       sectsz=512   attr=2, projid32bit=1
+         =                       crc=1        finobt=1, sparse=1, rmapbt=0
+
+BTRFS Features:
+Filesystem features:      has_journal ext_attr resize_inode dir_index filetype needs_recovery extent 64bit flex_bg sparse_super large_file huge_file dir_nlink extra_isize metadata_csum
+
+4. PERFORMANCE RECOMMENDATIONS
+------------------------------
+Based on the tests performed:
+
+• EXT4: Best for general-purpose workloads with good balance of performance and stability
+• XFS: Excellent for large files and high-throughput applications
+• BTRFS: Good for scenarios requiring advanced features like compression and snapshots
+
+• noatime/nodiratime options provide significant performance improvements
+• Proper I/O scheduler selection is crucial for optimal performance
+• File system block size should match workload characteristics
+
+Report generation completed

@@ -1,0 +1,274 @@
+=== COMPREHENSIVE NETWORK PERFORMANCE TEST ===
+Wed Oct 28 11:12:50 UTC 2026
+=== Test 1: Single Stream TCP Throughput ===
+Connecting to host 127.0.0.1, port 5001
+[  5] local 127.0.0.1 port 45578 connected to 127.0.0.1 port 5001
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-5.00   sec  9.42 GBytes  16.2 Gbits/sec    9    895 KBytes       
+[  5]   5.00-10.00  sec  9.30 GBytes  16.0 Gbits/sec    3   1.12 MBytes       
+[  5]  10.00-15.00  sec  8.33 GBytes  14.3 Gbits/sec    9    895 KBytes       
+[  5]  15.00-20.00  sec  8.56 GBytes  14.7 Gbits/sec    9   1023 KBytes       
+[  5]  20.00-25.00  sec  8.64 GBytes  14.8 Gbits/sec    6   1023 KBytes       
+[  5]  25.00-30.00  sec  8.97 GBytes  15.4 Gbits/sec    1   1023 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-30.00  sec  53.2 GBytes  15.2 Gbits/sec   37             sender
+[  5]   0.00-30.04  sec  53.2 GBytes  15.2 Gbits/sec                  receiver
+
+iperf Done.
+=== Test 2: Multiple Parallel Streams (4 streams) ===
+Connecting to host 127.0.0.1, port 5001
+[  5] local 127.0.0.1 port 40922 connected to 127.0.0.1 port 5001
+[  7] local 127.0.0.1 port 40934 connected to 127.0.0.1 port 5001
+[  9] local 127.0.0.1 port 40944 connected to 127.0.0.1 port 5001
+[ 11] local 127.0.0.1 port 40946 connected to 127.0.0.1 port 5001
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-5.00   sec  2.15 GBytes  3.69 Gbits/sec    0    895 KBytes       
+[  7]   0.00-5.00   sec  2.15 GBytes  3.69 Gbits/sec    1    895 KBytes       
+[  9]   0.00-5.00   sec  2.15 GBytes  3.69 Gbits/sec    0    895 KBytes       
+[ 11]   0.00-5.00   sec  2.15 GBytes  3.69 Gbits/sec    2    895 KBytes       
+[SUM]   0.00-5.00   sec  8.60 GBytes  14.8 Gbits/sec    3             
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   5.00-10.00  sec  2.10 GBytes  3.61 Gbits/sec    6    895 KBytes       
+[  7]   5.00-10.00  sec  2.10 GBytes  3.61 Gbits/sec    3    895 KBytes       
+[  9]   5.00-10.00  sec  2.10 GBytes  3.61 Gbits/sec    2    895 KBytes       
+[ 11]   5.00-10.00  sec  2.10 GBytes  3.61 Gbits/sec    2    895 KBytes       
+[SUM]   5.00-10.00  sec  8.40 GBytes  14.4 Gbits/sec   13             
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]  10.00-15.00  sec  2.16 GBytes  3.70 Gbits/sec    0    895 KBytes       
+[  7]  10.00-15.00  sec  2.16 GBytes  3.70 Gbits/sec    3    895 KBytes       
+[  9]  10.00-15.00  sec  2.16 GBytes  3.70 Gbits/sec    0    831 KBytes       
+[ 11]  10.00-15.00  sec  2.16 GBytes  3.70 Gbits/sec    4    895 KBytes       
+[SUM]  10.00-15.00  sec  8.63 GBytes  14.8 Gbits/sec    7             
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]  15.00-20.00  sec  2.21 GBytes  3.80 Gbits/sec    1    895 KBytes       
+[  7]  15.00-20.00  sec  2.21 GBytes  3.80 Gbits/sec    1    895 KBytes       
+[  9]  15.00-20.00  sec  2.21 GBytes  3.80 Gbits/sec    0    895 KBytes       
+[ 11]  15.00-20.00  sec  2.21 GBytes  3.80 Gbits/sec    3    895 KBytes       
+[SUM]  15.00-20.00  sec  8.86 GBytes  15.2 Gbits/sec    5             
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]  20.00-25.00  sec  2.08 GBytes  3.58 Gbits/sec    2    895 KBytes       
+[  7]  20.00-25.00  sec  2.08 GBytes  3.58 Gbits/sec    5    895 KBytes       
+[  9]  20.00-25.00  sec  2.08 GBytes  3.58 Gbits/sec    5    895 KBytes       
+[ 11]  20.00-25.00  sec  2.08 GBytes  3.58 Gbits/sec    3    895 KBytes       
+[SUM]  20.00-25.00  sec  8.34 GBytes  14.3 Gbits/sec   15             
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]  25.00-30.00  sec  2.15 GBytes  3.69 Gbits/sec    2    895 KBytes       
+[  7]  25.00-30.00  sec  2.15 GBytes  3.69 Gbits/sec    0    895 KBytes       
+[  9]  25.00-30.00  sec  2.15 GBytes  3.69 Gbits/sec    6    895 KBytes       
+[ 11]  25.00-30.00  sec  2.15 GBytes  3.69 Gbits/sec    4   1023 KBytes       
+[SUM]  25.00-30.00  sec  8.60 GBytes  14.8 Gbits/sec   12             
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-30.00  sec  12.9 GBytes  3.68 Gbits/sec   11             sender
+[  5]   0.00-30.04  sec  12.9 GBytes  3.68 Gbits/sec                  receiver
+[  7]   0.00-30.00  sec  12.9 GBytes  3.68 Gbits/sec   13             sender
+[  7]   0.00-30.04  sec  12.9 GBytes  3.68 Gbits/sec                  receiver
+[  9]   0.00-30.00  sec  12.9 GBytes  3.68 Gbits/sec   13             sender
+[  9]   0.00-30.04  sec  12.9 GBytes  3.68 Gbits/sec                  receiver
+[ 11]   0.00-30.00  sec  12.9 GBytes  3.68 Gbits/sec   18             sender
+[ 11]   0.00-30.04  sec  12.9 GBytes  3.68 Gbits/sec                  receiver
+[SUM]   0.00-30.00  sec  51.4 GBytes  14.7 Gbits/sec   55             sender
+[SUM]   0.00-30.04  sec  51.4 GBytes  14.7 Gbits/sec                  receiver
+
+iperf Done.
+=== Test 3: TCP with 64K window size ===
+Connecting to host 127.0.0.1, port 5001
+[  5] local 127.0.0.1 port 60138 connected to 127.0.0.1 port 5001
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  1.24 GBytes  10.6 Gbits/sec   13    720 KBytes       
+[  5]   1.00-2.00   sec  1.31 GBytes  11.3 Gbits/sec    1    720 KBytes       
+[  5]   2.00-3.00   sec  1.33 GBytes  11.5 Gbits/sec    2    720 KBytes       
+[  5]   3.00-4.00   sec  1.35 GBytes  11.6 Gbits/sec    5    720 KBytes       
+[  5]   4.00-5.00   sec  1.33 GBytes  11.5 Gbits/sec    2    720 KBytes       
+[  5]   5.00-6.00   sec  1.27 GBytes  10.9 Gbits/sec    3    720 KBytes       
+[  5]   6.00-7.00   sec  1.35 GBytes  11.6 Gbits/sec    3    841 KBytes       
+[  5]   7.00-8.00   sec  1.37 GBytes  11.7 Gbits/sec    2    720 KBytes       
+[  5]   8.00-9.00   sec  1.40 GBytes  12.1 Gbits/sec    1    720 KBytes       
+[  5]   9.00-10.00  sec  1.40 GBytes  12.0 Gbits/sec    2    720 KBytes       
+[  5]  10.00-11.00  sec  1.30 GBytes  11.2 Gbits/sec    1    720 KBytes       
+[  5]  11.00-12.00  sec  1.35 GBytes  11.6 Gbits/sec    2    720 KBytes       
+[  5]  12.00-13.00  sec  1.31 GBytes  11.2 Gbits/sec    1    720 KBytes       
+[  5]  13.00-14.00  sec  1.38 GBytes  11.9 Gbits/sec    3    841 KBytes       
+[  5]  14.00-15.00  sec  1.37 GBytes  11.8 Gbits/sec    1    720 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-15.00  sec  20.1 GBytes  11.5 Gbits/sec   42             sender
+[  5]   0.00-25.05  sec  20.1 GBytes  6.88 Gbits/sec                  receiver
+
+iperf Done.
+=== Test 3: TCP with 128K window size ===
+Connecting to host 127.0.0.1, port 5001
+[  5] local 127.0.0.1 port 59224 connected to 127.0.0.1 port 5001
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  1.53 GBytes  13.2 Gbits/sec    6    895 KBytes       
+[  5]   1.00-2.00   sec  1.67 GBytes  14.3 Gbits/sec    0    895 KBytes       
+[  5]   2.00-3.00   sec  1.57 GBytes  13.5 Gbits/sec    2    895 KBytes       
+[  5]   3.00-4.00   sec  1.56 GBytes  13.4 Gbits/sec    2    895 KBytes       
+[  5]   4.00-5.00   sec  1.60 GBytes  13.7 Gbits/sec    4   1023 KBytes       
+[  5]   5.00-6.00   sec  1.56 GBytes  13.4 Gbits/sec    4    895 KBytes       
+[  5]   6.00-7.00   sec  1.69 GBytes  14.6 Gbits/sec    3    895 KBytes       
+[  5]   7.00-8.00   sec  1.72 GBytes  14.8 Gbits/sec    0    895 KBytes       
+[  5]   8.00-9.00   sec  1.71 GBytes  14.7 Gbits/sec    1    895 KBytes       
+[  5]   9.00-10.00  sec  1.67 GBytes  14.3 Gbits/sec    0    895 KBytes       
+[  5]  10.00-11.00  sec  1.54 GBytes  13.2 Gbits/sec    2    895 KBytes       
+[  5]  11.00-12.00  sec  1.78 GBytes  15.2 Gbits/sec    1    895 KBytes       
+[  5]  12.00-13.00  sec  1.64 GBytes  14.1 Gbits/sec    0    895 KBytes       
+[  5]  13.00-14.00  sec  1.74 GBytes  15.0 Gbits/sec    2    895 KBytes       
+[  5]  14.00-15.00  sec  1.63 GBytes  14.0 Gbits/sec    3    895 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-15.00  sec  24.6 GBytes  14.1 Gbits/sec   30             sender
+[  5]   0.00-15.04  sec  24.6 GBytes  14.1 Gbits/sec                  receiver
+
+iperf Done.
+=== Test 3: TCP with 256K window size ===
+Connecting to host 127.0.0.1, port 5001
+[  5] local 127.0.0.1 port 38580 connected to 127.0.0.1 port 5001
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  1.66 GBytes  14.3 Gbits/sec    2   1023 KBytes       
+[  5]   1.00-2.00   sec  1.67 GBytes  14.3 Gbits/sec    4   1023 KBytes       
+[  5]   2.00-3.00   sec  1.67 GBytes  14.3 Gbits/sec    5   1023 KBytes       
+[  5]   3.00-4.00   sec  1.61 GBytes  13.8 Gbits/sec    2    895 KBytes       
+[  5]   4.00-5.00   sec  1.67 GBytes  14.4 Gbits/sec    1   1023 KBytes       
+[  5]   5.00-6.00   sec  1.78 GBytes  15.3 Gbits/sec    0   1023 KBytes       
+[  5]   6.00-7.00   sec  1.78 GBytes  15.3 Gbits/sec    0   1023 KBytes       
+[  5]   7.00-8.00   sec  1.87 GBytes  16.1 Gbits/sec    0   1023 KBytes       
+[  5]   8.00-9.00   sec  1.53 GBytes  13.2 Gbits/sec    0    895 KBytes       
+[  5]   9.00-10.00  sec  1.64 GBytes  14.1 Gbits/sec    2    895 KBytes       
+[  5]  10.00-11.00  sec  1.49 GBytes  12.8 Gbits/sec    3    895 KBytes       
+[  5]  11.00-12.00  sec  1.64 GBytes  14.1 Gbits/sec    1   1023 KBytes       
+[  5]  12.00-13.00  sec  1.83 GBytes  15.7 Gbits/sec    0    895 KBytes       
+[  5]  13.00-14.00  sec  1.74 GBytes  14.9 Gbits/sec    2   1023 KBytes       
+[  5]  14.00-15.00  sec  1.73 GBytes  14.9 Gbits/sec    1   1023 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-15.00  sec  25.3 GBytes  14.5 Gbits/sec   23             sender
+[  5]   0.00-15.04  sec  25.3 GBytes  14.5 Gbits/sec                  receiver
+
+iperf Done.
+=== Test 3: TCP with 512K window size ===
+Connecting to host 127.0.0.1, port 5001
+[  5] local 127.0.0.1 port 45810 connected to 127.0.0.1 port 5001
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  1.84 GBytes  15.8 Gbits/sec    0   1023 KBytes       
+[  5]   1.00-2.00   sec  1.75 GBytes  15.0 Gbits/sec    0    895 KBytes       
+[  5]   2.00-3.00   sec  1.82 GBytes  15.6 Gbits/sec    2    895 KBytes       
+[  5]   3.00-4.00   sec  1.71 GBytes  14.7 Gbits/sec    1   1023 KBytes       
+[  5]   4.00-5.00   sec  1.80 GBytes  15.4 Gbits/sec    1   1023 KBytes       
+[  5]   5.00-6.00   sec  1.83 GBytes  15.7 Gbits/sec    0   1023 KBytes       
+[  5]   6.00-7.00   sec  1.76 GBytes  15.1 Gbits/sec    2   1023 KBytes       
+[  5]   7.00-8.00   sec  1.85 GBytes  15.9 Gbits/sec    0   1023 KBytes       
+[  5]   8.00-9.00   sec  1.92 GBytes  16.5 Gbits/sec    0    895 KBytes       
+[  5]   9.00-10.00  sec  1.65 GBytes  14.1 Gbits/sec    0    895 KBytes       
+[  5]  10.00-11.00  sec  1.64 GBytes  14.0 Gbits/sec    4   1023 KBytes       
+[  5]  11.00-12.00  sec  1.77 GBytes  15.2 Gbits/sec    1   1023 KBytes       
+[  5]  12.00-13.00  sec  1.76 GBytes  15.1 Gbits/sec    0   1023 KBytes       
+[  5]  13.00-14.00  sec  1.71 GBytes  14.7 Gbits/sec    0   1023 KBytes       
+[  5]  14.00-15.00  sec  1.60 GBytes  13.8 Gbits/sec    2   1023 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-15.00  sec  26.4 GBytes  15.1 Gbits/sec   13             sender
+[  5]   0.00-25.05  sec  26.4 GBytes  9.05 Gbits/sec                  receiver
+
+iperf Done.
+=== Test 3: TCP with 1M window size ===
+Connecting to host 127.0.0.1, port 5001
+[  5] local 127.0.0.1 port 47946 connected to 127.0.0.1 port 5001
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  1.59 GBytes  13.6 Gbits/sec    2   1023 KBytes       
+[  5]   1.00-2.00   sec  1.73 GBytes  14.8 Gbits/sec    3    895 KBytes       
+[  5]   2.00-3.00   sec  1.83 GBytes  15.7 Gbits/sec    2   1023 KBytes       
+[  5]   3.00-4.00   sec  1.88 GBytes  16.2 Gbits/sec    0   1023 KBytes       
+[  5]   4.00-5.00   sec  1.58 GBytes  13.5 Gbits/sec    1    895 KBytes       
+[  5]   5.00-6.00   sec  1.84 GBytes  15.8 Gbits/sec    0   1023 KBytes       
+[  5]   6.00-7.00   sec  1.67 GBytes  14.3 Gbits/sec    0   1023 KBytes       
+[  5]   7.00-8.00   sec  1.86 GBytes  16.0 Gbits/sec    0   1023 KBytes       
+[  5]   8.00-9.00   sec  1.51 GBytes  12.9 Gbits/sec    3   1023 KBytes       
+[  5]   9.00-10.00  sec  1.68 GBytes  14.5 Gbits/sec    2   1023 KBytes       
+[  5]  10.00-11.00  sec  1.89 GBytes  16.3 Gbits/sec    0   1023 KBytes       
+[  5]  11.00-12.00  sec  1.68 GBytes  14.4 Gbits/sec    0   1023 KBytes       
+[  5]  12.00-13.00  sec  1.85 GBytes  15.9 Gbits/sec    2   1023 KBytes       
+[  5]  13.00-14.00  sec  1.88 GBytes  16.1 Gbits/sec    0   1023 KBytes       
+[  5]  14.00-15.00  sec  1.93 GBytes  16.6 Gbits/sec    0   1023 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-15.00  sec  26.4 GBytes  15.1 Gbits/sec   15             sender
+[  5]   0.00-25.04  sec  26.4 GBytes  9.06 Gbits/sec                  receiver
+
+iperf Done.
+=== Test 4: UDP at 100M rate ===
+Connecting to host 127.0.0.1, port 5001
+[  5] local 127.0.0.1 port 39309 connected to 127.0.0.1 port 5001
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[  5]   0.00-1.00   sec  11.9 MBytes   100 Mbits/sec  382  
+[  5]   1.00-2.00   sec  11.9 MBytes  99.9 Mbits/sec  381  
+[  5]   2.00-3.00   sec  11.9 MBytes   100 Mbits/sec  382  
+[  5]   3.00-4.00   sec  11.9 MBytes  99.9 Mbits/sec  381  
+[  5]   4.00-5.00   sec  11.9 MBytes   100 Mbits/sec  382  
+[  5]   5.00-6.00   sec  11.9 MBytes  99.8 Mbits/sec  381  
+[  5]   6.00-7.00   sec  11.9 MBytes  99.9 Mbits/sec  381  
+[  5]   7.00-8.00   sec  11.9 MBytes   100 Mbits/sec  382  
+[  5]   8.00-9.00   sec  11.9 MBytes  99.9 Mbits/sec  381  
+[  5]   9.00-10.00  sec  11.9 MBytes   100 Mbits/sec  382  
+[  5]  10.00-11.00  sec  11.9 MBytes  99.9 Mbits/sec  381  
+[  5]  11.00-12.00  sec  11.9 MBytes   100 Mbits/sec  382  
+[  5]  12.00-13.00  sec  11.9 MBytes  99.8 Mbits/sec  381  
+[  5]  13.00-14.00  sec  11.9 MBytes   100 Mbits/sec  382  
+[  5]  14.00-15.00  sec  11.9 MBytes  99.9 Mbits/sec  381  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-15.00  sec   179 MBytes   100 Mbits/sec  0.000 ms  0/5722 (0%)  sender
+[  5]   0.00-15.04  sec   179 MBytes  99.7 Mbits/sec  0.023 ms  0/5722 (0%)  receiver
+
+iperf Done.
+=== Test 4: UDP at 500M rate ===
+Connecting to host 127.0.0.1, port 5001
+[  5] local 127.0.0.1 port 34037 connected to 127.0.0.1 port 5001
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[  5]   0.00-1.00   sec  59.6 MBytes   500 Mbits/sec  1906  
+[  5]   1.00-2.00   sec  59.6 MBytes   500 Mbits/sec  1907  
+[  5]   2.00-3.00   sec  59.6 MBytes   500 Mbits/sec  1908  
+[  5]   3.00-4.00   sec  59.6 MBytes   500 Mbits/sec  1907  
+[  5]   4.00-5.00   sec  59.6 MBytes   500 Mbits/sec  1908  
+[  5]   5.00-6.00   sec  59.6 MBytes   500 Mbits/sec  1907  
+[  5]   6.00-7.00   sec  59.6 MBytes   500 Mbits/sec  1907  
+[  5]   7.00-8.00   sec  59.6 MBytes   500 Mbits/sec  1908  
+[  5]   8.00-9.00   sec  59.6 MBytes   500 Mbits/sec  1907  
+[  5]   9.00-10.00  sec  59.6 MBytes   500 Mbits/sec  1907  
+[  5]  10.00-11.00  sec  59.6 MBytes   500 Mbits/sec  1908  
+[  5]  11.00-12.00  sec  59.6 MBytes   500 Mbits/sec  1907  
+[  5]  12.00-13.00  sec  59.6 MBytes   500 Mbits/sec  1907  
+[  5]  13.00-14.00  sec  59.6 MBytes   500 Mbits/sec  1908  
+[  5]  14.00-15.00  sec  59.6 MBytes   500 Mbits/sec  1907  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-15.00  sec   894 MBytes   500 Mbits/sec  0.000 ms  0/28609 (0%)  sender
+[  5]   0.00-15.04  sec   894 MBytes   499 Mbits/sec  0.038 ms  0/28609 (0%)  receiver
+
+iperf Done.
+=== Test 4: UDP at 1G rate ===
+Connecting to host 127.0.0.1, port 5001
+[  5] local 127.0.0.1 port 57282 connected to 127.0.0.1 port 5001
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[  5]   0.00-1.00   sec   119 MBytes   999 Mbits/sec  3812  
+[  5]   1.00-2.00   sec   119 MBytes  1.00 Gbits/sec  3815  
+[  5]   2.00-3.00   sec   119 MBytes  1000 Mbits/sec  3814  
+[  5]   3.00-4.00   sec   119 MBytes  1.00 Gbits/sec  3815  
+[  5]   4.00-5.00   sec   119 MBytes  1.00 Gbits/sec  3815  
+[  5]   5.00-6.00   sec   119 MBytes  1.00 Gbits/sec  3815  
+[  5]   6.00-7.00   sec   119 MBytes  1000 Mbits/sec  3814  
+[  5]   7.00-8.00   sec   119 MBytes  1.00 Gbits/sec  3815  
+[  5]   8.00-9.00   sec   119 MBytes  1000 Mbits/sec  3814  
+[  5]   9.00-10.00  sec   119 MBytes  1.00 Gbits/sec  3815  
+[  5]  10.00-11.00  sec   119 MBytes  1.00 Gbits/sec  3815  
+[  5]  11.00-12.00  sec   119 MBytes  1.00 Gbits/sec  3815  
+[  5]  12.00-13.00  sec   119 MBytes  1000 Mbits/sec  3814  
+[  5]  13.00-14.00  sec   119 MBytes  1.00 Gbits/sec  3815  
+[  5]  14.00-15.00  sec   119 MBytes  1.00 Gbits/sec  3815  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-15.00  sec  1.75 GBytes  1000 Mbits/sec  0.000 ms  0/57218 (0%)  sender
+[  5]   0.00-15.04  sec  1.75 GBytes   997 Mbits/sec  0.026 ms  15/57218 (0.026%)  receiver
+
+iperf Done.

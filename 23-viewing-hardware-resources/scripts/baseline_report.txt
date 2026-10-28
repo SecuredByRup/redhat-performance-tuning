@@ -1,0 +1,8 @@
+=== HARDWARE RESOURCE BASELINE ===
+System: ip-172-31-10-101.ec2.internal
+Date: Mon Oct 26 08:46:42 UTC 2026
+
+CPU: AMD EPYC 7571
+Total Memory: 15Gi
+Storage: 2 devices
+Network: 2 interfaces

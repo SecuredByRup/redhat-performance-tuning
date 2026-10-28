@@ -1,0 +1,15 @@
+=== NETWORK PERFORMANCE COMPARISON REPORT ===
+Generated: Wed Oct 28 11:13:05 UTC 2026
+
+=== Raw Throughput (bits per second) ===
+Baseline:        11561273249.849
+TCP Optimized:   11185649786.861973
+Fully Optimized: N/A
+
+=== Converted to Gbps ===
+Baseline:        11.56 Gbps
+TCP Optimized:   11.18 Gbps
+
+=== PERFORMANCE IMPROVEMENT ANALYSIS ===
+Unable to calculate improvement percentage: missing or zero baseline JSON data.
+

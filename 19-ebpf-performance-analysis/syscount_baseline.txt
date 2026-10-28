@@ -1,0 +1,15 @@
+ppoll                      2693
+Tracing syscalls, printing top 10... Ctrl+C to quit.
+[09:55:45]
+SYSCALL                   COUNT
+read                       2209
+recvmsg                    2032
+write                      1766
+recvfrom                   1341
+sendto                      781
+poll                        576
+futex                       528
+writev                      528
+setitimer                   518
+
+Detaching...

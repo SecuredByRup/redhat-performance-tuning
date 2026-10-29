@@ -1,0 +1,20 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+gdm         1988  1.0  1.4 4396412 233160 tty1   Sl+  10:21   0:03 /usr/bin/gnome-shell
+gdm         2260  1.0  0.7 1466916 116188 tty1   Sl+  10:21   0:02 /usr/libexec/dcv/dcvagent --session-id console --mode system --settings-path /etc/dcv/dcv.conf --log-dir /var/log/dcv --log-level INFO --log-rotate-at-startup
+dcv          829  0.9  0.3 889988 56528 ?        Sl   10:20   0:02 /usr/libexec/dcv/dcvserver --service
+root           1  0.8  0.1 175980 18424 ?        Ss   10:20   0:02 /usr/lib/systemd/systemd --switched-root --system --deserialize 28
+root          12  0.4  0.0      0     0 ?        I    10:20   0:01 [kworker/u16:1-events_unbound]
+root        1943  0.4  0.4 2293664 74416 tty1    Sl+  10:21   0:01 /usr/libexec/Xorg vt1 -displayfd 3 -auth /run/user/42/gdm/Xauthority -nolisten tcp -background none -noreset -keeptty -novtswitch -verbose 3
+cwagent     2725  0.3  0.7 1518368 120040 ?      Ssl  10:22   0:00 /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent -config /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.toml -envconfig /opt/aws/amazon-cloudwatch-agent/etc/env-config.json -otelconfig /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.yaml -pidfile /opt/aws/amazon-cloudwatch-agent/var/amazon-cloudwatch-agent.pid
+root         798  0.2  0.2 354544 44560 ?        Ssl  10:20   0:00 /usr/bin/python3 -s /usr/sbin/firewalld --nofork --nopid
+centos      2422  0.2  0.0 225200  5988 pts/0    Ss+  10:21   0:00 -bash
+root          17  0.1  0.0      0     0 ?        S<   10:20   0:00 [pr/ttyS0]
+polkitd      837  0.1  0.1 2715292 25772 ?       Ssl  10:20   0:00 /usr/lib/polkit-1/polkitd --no-debug
+root           2  0.0  0.0      0     0 ?        S    10:20   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    10:20   0:00 [pool_workqueue_]
+root           4  0.0  0.0      0     0 ?        I<   10:20   0:00 [kworker/R-rcu_g]
+root           5  0.0  0.0      0     0 ?        I<   10:20   0:00 [kworker/R-sync_]
+root           6  0.0  0.0      0     0 ?        I<   10:20   0:00 [kworker/R-slub_]
+root           7  0.0  0.0      0     0 ?        I<   10:20   0:00 [kworker/R-netns]
+root           8  0.0  0.0      0     0 ?        I    10:20   0:00 [kworker/0:0-cgroup_destroy]
+root           9  0.0  0.0      0     0 ?        I<   10:20   0:00 [kworker/0:0H-events_highpri]

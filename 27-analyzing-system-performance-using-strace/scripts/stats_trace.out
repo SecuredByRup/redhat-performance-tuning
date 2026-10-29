@@ -1,0 +1,40 @@
+total 4
+drwxrwxrwt. 13 root root 4096 Oct 27 10:04 .
+drwxr-xr-x. 20 root root  259 Sep 12 11:56 ..
+drwxrwxrwt.  2 root root   18 Oct 27 09:48 .ICE-unix
+drwxrwxrwt.  2 root root   16 Oct 27 09:48 .X11-unix
+srwxrwxrwx.  1 gdm  gdm     0 Oct 27 09:48 dbus-Yaho6iF0Ce
+drwxr-xr-x.  2 root root   18 Oct 27 09:54 hsperfdata_root
+drwx------.  3 root root   17 Oct 27 09:48 systemd-private-e9559179382a4a078dbc8eb52a08d4da-chronyd.service-HzIIrq
+drwx------.  3 root root   17 Oct 27 09:48 systemd-private-e9559179382a4a078dbc8eb52a08d4da-colord.service-ElkKVb
+drwx------.  3 root root   17 Oct 27 09:48 systemd-private-e9559179382a4a078dbc8eb52a08d4da-dbus-broker.service-AnPWQb
+drwx------.  3 root root   17 Oct 27 09:48 systemd-private-e9559179382a4a078dbc8eb52a08d4da-irqbalance.service-9gIEtt
+drwx------.  3 root root   17 Oct 27 09:48 systemd-private-e9559179382a4a078dbc8eb52a08d4da-kdump.service-kwEkwq
+drwx------.  3 root root   17 Oct 27 09:48 systemd-private-e9559179382a4a078dbc8eb52a08d4da-rtkit-daemon.service-6qMaBT
+drwx------.  3 root root   17 Oct 27 09:48 systemd-private-e9559179382a4a078dbc8eb52a08d4da-systemd-logind.service-G1rS2E
+drwx------.  3 root root   17 Oct 27 09:48 systemd-private-e9559179382a4a078dbc8eb52a08d4da-upower.service-uUpmko
+Child process completed
+% time     seconds  usecs/call     calls    errors syscall
+------ ----------- ----------- --------- --------- ----------------
+ 52.06    0.001741        1741         1           wait4
+ 12.98    0.000434         434         1           execve
+  7.75    0.000259          86         3           fstat
+  7.21    0.000241          30         8           mmap
+  4.75    0.000159         159         1           clone
+  2.54    0.000085          42         2           openat
+  1.97    0.000066          22         3           mprotect
+  1.73    0.000058          58         1           write
+  1.50    0.000050          16         3           brk
+  1.41    0.000047          11         4           pread64
+  1.08    0.000036          36         1         1 access
+  0.99    0.000033          33         1           munmap
+  0.81    0.000027          13         2         1 arch_prctl
+  0.72    0.000024          12         2           close
+  0.66    0.000022          22         1           getrandom
+  0.51    0.000017          17         1           read
+  0.36    0.000012          12         1           prlimit64
+  0.33    0.000011          11         1           set_tid_address
+  0.33    0.000011          11         1           set_robust_list
+  0.33    0.000011          11         1           rseq
+------ ----------- ----------- --------- --------- ----------------
+100.00    0.003344          85        39         2 total

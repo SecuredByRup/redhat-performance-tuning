@@ -1,0 +1,26 @@
+DNS Performance Monitoring
+=========================
+Testing DNS resolution times...
+Testing google.com: 16ms
+Testing github.com: 21ms
+Testing stackoverflow.com: 19ms
+Testing redhat.com: 29ms
+Testing ubuntu.com: 130ms
+
+DNS Cache Statistics:
+DNSSEC supported by current servers: yes
+
+Transactions          
+Current Transactions: 0
+  Total Transactions: 162
+                      
+Cache                 
+  Current Cache Size: 1
+          Cache Hits: 0
+        Cache Misses: 162
+                      
+DNSSEC Verdicts       
+              Secure: 0
+            Insecure: 4
+               Bogus: 0
+       Indeterminate: 12

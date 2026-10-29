@@ -1,0 +1,7 @@
+=== Baseline TCP Settings ===
+Date: Thu Oct 29 06:26:56 UTC 2026
+rmem_default: 212992
+rmem_max: 212992
+wmem_default: 212992
+wmem_max: 212992
+tcp_congestion_control: cubic

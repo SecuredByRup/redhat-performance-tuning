@@ -1,0 +1,17 @@
+I/O Bottleneck Analysis Report
+Generated: Tue Oct 20 16:06:40 UTC 2026
+================================
+
+BOTTLENECK ANALYSIS RESULTS:
+----------------------------
+Devices with high utilization (>80%):
+
+Devices with high await times (>20ms):
+
+Devices with high average queue sizes (>2):
+
+RECOMMENDATIONS:
+----------------
+1. Consider I/O scheduler optimization for high utilization devices
+2. Investigate storage hardware for devices with high await times
+3. Implement I/O throttling for applications causing queue buildup

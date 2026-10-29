@@ -1,0 +1,39 @@
+=== INTERFACE & BUFFER BASELINE ===
+Primary Interface: ens5
+2: ens5: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9001 qdisc mq state UP group default qlen 1000
+    link/ether 0a:ff:f0:3d:58:07 brd ff:ff:ff:ff:ff:ff
+    altname enp0s5
+    inet 172.31.10.224/24 brd 172.31.10.255 scope global dynamic noprefixroute ens5
+       valid_lft 3178sec preferred_lft 3178sec
+    inet6 fe80::8ff:f0ff:fe3d:5807/64 scope link 
+       valid_lft forever preferred_lft forever
+
+--- Current sysctl Buffer Values ---
+net.core.rmem_max = 212992
+net.core.wmem_max = 212992
+net.core.rmem_default = 212992
+net.core.wmem_default = 212992
+net.ipv4.tcp_rmem = 4096	131072	6291456
+net.ipv4.tcp_wmem = 4096	16384	4194304
+
+--- Ethtool Ring Buffers ---
+Ring parameters for ens5:
+Pre-set maximums:
+RX:			16384
+RX Mini:		n/a
+RX Jumbo:		n/a
+TX:			1024
+TX push buff len:	0
+HDS thresh:		n/a
+Current hardware settings:
+RX:			1024
+RX Mini:		n/a
+RX Jumbo:		n/a
+TX:			1024
+RX Buf Len:		n/a
+CQE Size:		n/a
+TX Push:		off
+RX Push:		off
+TX push buff len:	0
+TCP data split:		n/a
+HDS thresh:		n/a

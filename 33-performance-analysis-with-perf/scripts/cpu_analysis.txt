@@ -1,0 +1,28 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 12K of event 'task-clock:uppp'
+# Event count (approx.): 3240750000
+#
+# Children      Self  Command        Shared Object     Symbol                          
+# ........  ........  .............  ................  ................................
+#
+    99.99%    99.99%  cpu_intensive  cpu_intensive     [.] main
+            |
+            ---__libc_start_call_main
+               main
+
+    99.99%     0.00%  cpu_intensive  libc.so.6         [.] __libc_start_call_main
+            |
+            ---__libc_start_call_main
+               main
+
+     0.01%     0.01%  cpu_intensive  libc.so.6         [.] _IO_file_setbuf@@GLIBC_2.2.5
+     0.01%     0.00%  cpu_intensive  [unknown]         [.] 0000000000000000
+
+
+#
+# (Tip: Order by the overhead of source file name and line number: perf report -s srcline)
+#

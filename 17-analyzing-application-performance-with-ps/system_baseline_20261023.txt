@@ -1,0 +1,22 @@
+=== SYSTEM PERFORMANCE BASELINE ===
+Date: Fri Oct 23 12:00:52 UTC 2026
+Hostname: ip-172-31-10-207.ec2.internal
+Kernel: 5.14.0-654.el9.x86_64
+CPU Cores: 4
+Total Memory: 15Gi
+
+=== CURRENT LOAD ===
+ 12:00:52 up 19 min,  1 user,  load average: 1.04, 1.09, 0.72
+
+=== TOP 10 PROCESSES BY CPU ===
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+centos      9324 97.4  0.0   3372  2208 pts/0    RN+  12:00   0:24 bc -l
+dcv          840  0.8  0.3 885132 52836 ?        Sl   11:41   0:09 /usr/libexec/dcv/dcvserver --service
+gdm         2257  0.8  0.8 1533688 127648 tty1   Sl+  11:41   0:09 /usr/libexec/dcv/dcvagent --session-id console --mode system --settings-path /etc/dcv/dcv.conf --log-dir /var/log/dcv --log-level INFO --log-rotate-at-startup
+gdm         1993  0.3  1.4 4399484 237568 tty1   Sl+  11:41   0:03 /usr/bin/gnome-shell
+root           1  0.2  0.1 175972 18480 ?        Ss   11:41   0:02 /usr/lib/systemd/systemd --switched-root --system --deserialize 28
+root        1948  0.2  0.4 2296268 77012 tty1    Sl+  11:41   0:03 /usr/libexec/Xorg vt1 -displayfd 3 -auth /run/user/42/gdm/Xauthority -nolisten tcp -background none -noreset -keeptty -novtswitch -verbose 3
+cwagent     2506  0.2  0.7 1452760 115392 ?      Ssl  11:42   0:02 /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent -config /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.toml -envconfig /opt/aws/amazon-cloudwatch-agent/etc/env-config.json -otelconfig /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.yaml -pidfile /opt/aws/amazon-cloudwatch-agent/var/amazon-cloudwatch-agent.pid
+root          10  0.1  0.0      0     0 ?        I    11:41   0:01 [kworker/u16:0-events_unbound]
+centos      2586  0.1  0.0 225788  6628 pts/0    Ss+  11:43   0:01 -bash
+root           2  0.0  0.0      0     0 ?        S    11:41   0:00 [kthreadd]

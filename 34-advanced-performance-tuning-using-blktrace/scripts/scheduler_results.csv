@@ -1,0 +1,5 @@
+device,scheduler,seq_read_MBps,seq_write_MBps
+nvme1n1,none,678,450
+nvme1n1,mq-deadline,699,446
+nvme1n1,kyber,625,425
+nvme1n1,bfq,647,458

@@ -1,0 +1,34 @@
+2026-10-27 10:54:39: Starting comprehensive CPU performance testing
+2026-10-27 10:54:39: Test duration per scenario: 30 seconds
+2026-10-27 10:54:39: === BASELINE TEST ===
+2026-10-27 10:54:39: System Information:
+CPU(s):                                  4
+On-line CPU(s) list:                     0-3
+Model name:                              AMD EPYC 7571
+Thread(s) per core:                      2
+Core(s) per socket:                      2
+Socket(s):                               1
+NUMA node0 CPU(s):                       0-3
+2026-10-27 10:54:39: Starting baseline CPU stress test
+stress-ng: info:  [17640] setting to a 30 secs run per stressor
+stress-ng: info:  [17640] dispatching hogs: 4 cpu
+stress-ng: info:  [17640] note: /proc/sys/kernel/sched_autogroup_enabled is 1 and this can impact scheduling throughput for processes not attached to a tty. Setting this to 0 may improve performance metrics
+stress-ng: metrc: [17640] stressor       bogo ops real time  usr time  sys time   bogo ops/s     bogo ops/s
+stress-ng: metrc: [17640]                           (secs)    (secs)    (secs)   (real time) (usr+sys time)
+stress-ng: metrc: [17640] cpu               95808     30.00    118.38      0.03      3193.44         809.12
+stress-ng: info:  [17640] skipped: 0
+stress-ng: info:  [17640] passed: 4: cpu (4)
+stress-ng: info:  [17640] failed: 0
+stress-ng: info:  [17640] metrics untrustworthy: 0
+stress-ng: info:  [17640] successful run completed in 30.01 secs
+2026-10-27 10:55:19: === AFFINITY OPTIMIZATION TEST ===
+2026-10-27 10:55:19: Test 1: Default affinity (all cores)
+2026-10-27 10:55:55: Test 2: Optimized affinity
+2026-10-27 10:56:35: === SCHEDULER OPTIMIZATION TEST ===
+2026-10-27 10:56:35: Running mixed workload with optimized scheduler
+2026-10-27 10:57:15: === SYSTEM METRICS COLLECTION ===
+2026-10-27 10:57:15: Load Average:  10:57:15 up 37 min,  2 users,  load average: 2.79, 1.46, 0.77
+2026-10-27 10:57:15: Memory Usage: Mem:            15Gi       1.0Gi        13Gi        19Mi       1.0Gi        14Gi
+2026-10-27 10:57:16: Context Switches: 642
+2026-10-27 10:57:16: CPU Utilization: 1.5
+2026-10-27 10:57:16: Performance testing completed. Results saved to cpu_performance_results.log

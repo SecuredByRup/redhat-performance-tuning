@@ -1,0 +1,28 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 1  of event 'syscalls:sys_enter_read'
+# Event count (approx.): 1
+#
+# Overhead  Trace output
+# ........  ............
+#
+   100.00%  fd: 0x000000
+
+
+# Samples: 2K of event 'syscalls:sys_enter_write'
+# Event count (approx.): 2562
+#
+# Overhead  Trace output                                          
+# ........  ......................................................
+#
+    99.92%  fd: 0x00000003, buf: 0x7fffc81f1a50, count: 0x00001000
+     0.04%  fd: 0x00000001, buf: 0x01fe62a0, count: 0x00000013
+     0.04%  fd: 0x00000001, buf: 0x01fe62a0, count: 0x0000001f
+
+
+#
+# (Tip: Show user configuration overrides: perf config --user --list)
+#

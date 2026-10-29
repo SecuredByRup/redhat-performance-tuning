@@ -1,0 +1,14 @@
+Starting comprehensive performance test (PID: 23264)
+CPU worker 0 started
+CPU worker 1 started
+CPU worker 2 started
+Memory worker 0 started
+Memory worker 1 started
+CPU worker 3 started
+Memory worker 2 started
+I/O worker 1 started
+Memory worker 3 started
+I/O worker 3 started
+I/O worker 2 started
+I/O worker 0 started
+Comprehensive test completed

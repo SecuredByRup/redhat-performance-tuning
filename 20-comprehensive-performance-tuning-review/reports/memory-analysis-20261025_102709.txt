@@ -1,0 +1,40 @@
+=== Memory Performance Analysis Report ===
+Generated on: Sun Oct 25 10:27:09 UTC 2026
+
+1. Current Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       1.2Gi        13Gi        19Mi       646Mi        13Gi
+Swap:             0B          0B          0B
+
+2. Memory Utilization Trend:
+Linux 5.14.0-654.el9.x86_64 (ip-172-31-15-216.ec2.internal) 	10/25/26 	_x86_64_	(4 CPU)
+
+10:20:54     LINUX RESTART	(4 CPU)
+
+3. Swap Usage:
+
+4. Top Memory Consuming Processes:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+gdm         1988  1.0  1.4 4396412 233160 tty1   Sl+  10:21   0:03 /usr/bin/gnome-shell
+cwagent     2725  0.3  0.7 1518368 120040 ?      Ssl  10:22   0:00 /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent -config /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.toml -envconfig /opt/aws/amazon-cloudwatch-agent/etc/env-config.json -otelconfig /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.yaml -pidfile /opt/aws/amazon-cloudwatch-agent/var/amazon-cloudwatch-agent.pid
+gdm         2260  1.0  0.7 1466916 116188 tty1   Sl+  10:21   0:02 /usr/libexec/dcv/dcvagent --session-id console --mode system --settings-path /etc/dcv/dcv.conf --log-dir /var/log/dcv --log-level INFO --log-rotate-at-startup
+root        1943  0.4  0.4 2293664 74416 tty1    Sl+  10:21   0:01 /usr/libexec/Xorg vt1 -displayfd 3 -auth /run/user/42/gdm/Xauthority -nolisten tcp -background none -noreset -keeptty -novtswitch -verbose 3
+dcv          829  0.9  0.3 889988 56528 ?        Sl   10:20   0:02 /usr/libexec/dcv/dcvserver --service
+root         798  0.2  0.2 354544 44560 ?        Ssl  10:20   0:00 /usr/bin/python3 -s /usr/sbin/firewalld --nofork --nopid
+root         970  0.0  0.1 484896 30044 ?        Ssl  10:20   0:00 /usr/bin/python3 -Es /usr/sbin/tuned -l -P
+gdm         2233  0.0  0.1 264008 28692 tty1     Sl+  10:21   0:00 /usr/libexec/dcv/dcvagentlauncher
+root        2038  0.0  0.1 483436 28200 ?        Ssl  10:21   0:00 /usr/bin/python3 -Es /usr/sbin/tuned-ppd -l
+gdm         2279  0.0  0.1 2932020 26220 tty1    Sl+  10:21   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+gdm         2099  0.0  0.1 2858288 26192 tty1    Sl+  10:21   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+root        2071  0.0  0.1 483600 25792 ?        Ssl  10:21   0:00 /usr/libexec/packagekitd
+polkitd      837  0.1  0.1 2715292 25772 ?       Ssl  10:20   0:00 /usr/lib/polkit-1/polkitd --no-debug
+gdm         2131  0.0  0.1 731392 23632 tty1     Sl+  10:21   0:00 /usr/libexec/gsd-media-keys
+gdm         2115  0.0  0.1 810240 22332 tty1     Sl+  10:21   0:00 /usr/libexec/gsd-color
+root         962  0.0  0.1 478296 22100 ?        Ssl  10:20   0:00 /usr/sbin/NetworkManager --no-daemon
+gdm         2151  0.0  0.1 735424 22044 tty1     Sl+  10:21   0:00 /usr/libexec/gsd-power
+gdm         2016  0.0  0.1 439480 20804 tty1     Sl   10:21   0:00 /usr/libexec/ibus-x11 --kill-daemon
+gdm         2180  0.0  0.1 601204 20460 tty1     Sl+  10:21   0:00 /usr/libexec/gsd-printer
+
+5. Memory Performance Analysis:
+Memory Usage: 8.17%
+- Memory usage is within acceptable range

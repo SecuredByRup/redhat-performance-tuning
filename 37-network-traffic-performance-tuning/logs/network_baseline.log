@@ -1,0 +1,81 @@
+Network Traffic Monitoring Report
+=================================
+Generated on: Thu Oct 29 06:32:14 UTC 2026
+
+1. Active Network Connections (netstat):
+----------------------------------------
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 0.0.0.0:8443            0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:5355            0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.54:53           0.0.0.0:*               LISTEN     
+tcp6       0      0 :::8443                 :::*                    LISTEN     
+tcp6       0      0 :::22                   :::*                    LISTEN     
+tcp6       0      0 :::5355                 :::*                    LISTEN     
+udp        0      0 0.0.0.0:5355            0.0.0.0:*                          
+udp        0      0 127.0.0.54:53           0.0.0.0:*                          
+udp        0      0 127.0.0.53:53           0.0.0.0:*                          
+udp        0      0 0.0.0.0:8443            0.0.0.0:*                          
+udp        0      0 127.0.0.1:323           0.0.0.0:*                          
+udp6       0      0 :::5355                 :::*                               
+udp6       0      0 :::8443                 :::*                               
+udp6       0      0 ::1:323                 :::*                               
+
+2. Socket Statistics (ss):
+-------------------------
+Netid State  Recv-Q Send-Q Local Address:Port Peer Address:Port
+udp   UNCONN 0      0            0.0.0.0:5355      0.0.0.0:*   
+udp   UNCONN 0      0         127.0.0.54:53        0.0.0.0:*   
+udp   UNCONN 0      0      127.0.0.53%lo:53        0.0.0.0:*   
+udp   UNCONN 0      0            0.0.0.0:8443      0.0.0.0:*   
+udp   UNCONN 0      0          127.0.0.1:323       0.0.0.0:*   
+udp   UNCONN 0      0               [::]:5355         [::]:*   
+udp   UNCONN 0      0               [::]:8443         [::]:*   
+udp   UNCONN 0      0              [::1]:323          [::]:*   
+tcp   LISTEN 0      10           0.0.0.0:8443      0.0.0.0:*   
+tcp   LISTEN 0      128          0.0.0.0:22        0.0.0.0:*   
+tcp   LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*   
+tcp   LISTEN 0      4096         0.0.0.0:5355      0.0.0.0:*   
+tcp   LISTEN 0      4096      127.0.0.54:53        0.0.0.0:*   
+tcp   LISTEN 0      10              [::]:8443         [::]:*   
+tcp   LISTEN 0      128             [::]:22           [::]:*   
+tcp   LISTEN 0      4096            [::]:5355         [::]:*   
+
+3. TCP Connection States:
+------------------------
+ESTABLISHED connections: 7
+TIME-WAIT connections: 4
+CLOSE-WAIT connections: 1
+
+4. Network Interface Statistics:
+-------------------------------
+  ens5: 1815979984 1242555    0  354    0     0          0         0 18242239   62346    0    0    0     0       0          0
+
+5. TCP Memory Usage:
+-------------------
+sockets: used 737
+TCP: inuse 11 orphan 0 tw 3 alloc 14 mem 0
+UDP: inuse 6 mem 256
+UDPLITE: inuse 0
+RAW: inuse 0
+FRAG: inuse 0 memory 0
+
+6. Network Buffer Usage:
+-----------------------
+Receive buffer: 262144 (default), 134217728 (max)
+Send buffer: 262144 (default), 134217728 (max)
+
+7. Top Network Processes:
+------------------------
+udp   UNCONN 0      0            0.0.0.0:5355      0.0.0.0:*          
+udp   UNCONN 0      0         127.0.0.54:53        0.0.0.0:*          
+udp   UNCONN 0      0      127.0.0.53%lo:53        0.0.0.0:*          
+udp   UNCONN 0      0               [::]:5355         [::]:*          
+tcp   LISTEN 0      128          0.0.0.0:22        0.0.0.0:*          
+tcp   LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*          
+tcp   LISTEN 0      4096         0.0.0.0:5355      0.0.0.0:*          
+tcp   LISTEN 0      4096      127.0.0.54:53        0.0.0.0:*          
+tcp   LISTEN 0      128             [::]:22           [::]:*          
+tcp   LISTEN 0      4096            [::]:5355         [::]:*          

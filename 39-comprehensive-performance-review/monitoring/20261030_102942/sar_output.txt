@@ -1,0 +1,23 @@
+Linux 5.14.0-654.el9.x86_64 (ip-172-31-10-71.ec2.internal) 	10/30/26 	_x86_64_	(4 CPU)
+
+10:29:42        CPU     %user     %nice   %system   %iowait    %steal     %idle
+10:29:44        all      0.76      0.00      1.51      0.00      0.13     97.60
+
+10:29:42    kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+10:29:44     11837948  14460992   1077992      6.76      4568   2845748   6565552     41.18   1459972   2248200        48
+
+10:29:42          DEV       tps     rkB/s     wkB/s     dkB/s   areq-sz    aqu-sz     await     %util
+10:29:44      nvme1n1      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+10:29:44      nvme0n1      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+
+
+Average:        CPU     %user     %nice   %system   %iowait    %steal     %idle
+Average:        all      0.76      0.00      1.51      0.00      0.13     97.60
+
+Average:    kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+Average:     11837948  14460992   1077992      6.76      4568   2845748   6565552     41.18   1459972   2248200        48
+
+Average:          DEV       tps     rkB/s     wkB/s     dkB/s   areq-sz    aqu-sz     await     %util
+Average:      nvme1n1      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:      nvme0n1      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00

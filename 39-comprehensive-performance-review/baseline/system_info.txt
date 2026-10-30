@@ -1,0 +1,9 @@
+System Performance Review - Fri Oct 30 10:15:00 UTC 2026
+=====================================
+Hostname: ip-172-31-10-71.ec2.internal
+Kernel: 5.14.0-654.el9.x86_64
+CPU Info: AMD EPYC 7571
+CPU Cores: 4
+Memory: 
+Disk Space: 
+Uptime:  10:15:00 up 4 min,  1 user,  load average: 0.25, 0.25, 0.12

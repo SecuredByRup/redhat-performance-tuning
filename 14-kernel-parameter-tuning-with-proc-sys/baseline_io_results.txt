@@ -1,0 +1,20 @@
+=== I/O Performance Test ===
+Current dirty page settings:
+vm.dirty_ratio: 15
+vm.dirty_background_ratio: 5
+
+Testing write performance...
+100+0 records in
+100+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 0.107814 s, 973 MB/s
+
+Testing read performance...
+100+0 records in
+100+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 0.287613 s, 365 MB/s
+
+Testing random I/O performance...
+fio not available, using dd random I/O test
+1000+0 records in
+1000+0 records out
+4096000 bytes (4.1 MB, 3.9 MiB) copied, 0.0322084 s, 127 MB/s

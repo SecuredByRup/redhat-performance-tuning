@@ -1,0 +1,45 @@
+=== CPU Usage Analysis ===
+Date: Tue Oct 27 10:58:06 UTC 2026
+
+Current CPU Utilization:
+%Cpu(s): 23.5 us,  2.9 sy,  0.0 ni, 69.1 id,  0.0 wa,  1.5 hi,  1.5 si,  1.5 st
+
+Load Average:
+ 10:58:06 up 38 min,  2 users,  load average: 1.67, 1.35, 0.77
+
+Per-CPU Statistics:
+Linux 5.14.0-654.el9.x86_64 (ip-172-31-10-140.ec2.internal) 	10/27/26 	_x86_64_	(4 CPU)
+
+10:58:06     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+10:58:07     all   24.81    0.00    0.75    0.00    0.25    0.00    0.50    0.00    0.00   73.68
+10:58:07       0   25.00    0.00    1.00    0.00    1.00    0.00    0.00    0.00    0.00   73.00
+10:58:07       1   21.00    0.00    1.00    0.00    0.00    0.00    1.00    0.00    0.00   77.00
+10:58:07       2   25.25    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00   74.75
+10:58:07       3   28.00    0.00    1.00    0.00    0.00    0.00    1.00    0.00    0.00   70.00
+
+Average:     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+Average:     all   24.81    0.00    0.75    0.00    0.25    0.00    0.50    0.00    0.00   73.68
+Average:       0   25.00    0.00    1.00    0.00    1.00    0.00    0.00    0.00    0.00   73.00
+Average:       1   21.00    0.00    1.00    0.00    0.00    0.00    1.00    0.00    0.00   77.00
+Average:       2   25.25    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00   74.75
+Average:       3   28.00    0.00    1.00    0.00    0.00    0.00    1.00    0.00    0.00   70.00
+
+=== Scheduler Performance ===
+Context Switches per second:
+Context switches: 2273
+
+Run Queue Statistics:
+Processes waiting: 1
+
+=== Performance Recommendations ===
+System Configuration:
+  CPU Cores: 4
+  Current Load: 1.56
+
+Recommendations:
+  - System load is acceptable
+  - Consider CPU affinity for CPU-intensive applications
+  - Monitor context switches - high values indicate scheduling overhead
+  - Use CPU affinity for processes with specific performance requirements
+  - Consider NUMA topology for multi-socket systems
+

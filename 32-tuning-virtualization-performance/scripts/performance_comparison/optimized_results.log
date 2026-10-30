@@ -1,0 +1,24 @@
+=== CPU Test ===
+    events per second:  2400.95
+    total time:                          10.0004s
+=== Memory Test ===
+512.00 MiB transferred (3798.59 MiB/sec)
+    total time:                          0.1328s
+=== VM Resource Usage ===
+Domain: 'performance-vm'
+  state.state=5
+  state.reason=6
+  cpu.time=1060000000
+  cpu.user=360000000
+  cpu.system=700000000
+  balloon.current=4194304
+  balloon.maximum=4194304
+  vcpu.current=4
+  vcpu.maximum=4
+  block.count=1
+  block.0.name=vda
+  block.0.path=/var/lib/libvirt/images/performance-vm.qcow2
+  block.0.allocation=31461376
+  block.0.capacity=16106127360
+  block.0.physical=16108814336
+

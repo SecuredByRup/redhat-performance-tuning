@@ -1,0 +1,59 @@
+=== Comprehensive Tuned Profile Performance Analysis ===
+Generated on: Mon Oct 26 10:19:19 UTC 2026
+System: Linux ip-172-31-10-43.ec2.internal 5.14.0-654.el9.x86_64 #1 SMP PREEMPT_DYNAMIC Fri Dec 19 08:34:59 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+
+=== Profile Configuration Summary ===
+--- balanced ---
+CPU Governor: CPU frequency scaling not available in virtual guest
+I/O Scheduler: [none] mq-deadline kyber bfq 
+vm.swappiness: vm.swappiness: 60
+
+--- throughput-performance ---
+CPU Governor: CPU frequency scaling not available in virtual guest
+I/O Scheduler: [none] mq-deadline kyber bfq 
+vm.swappiness: vm.swappiness: 10
+
+--- virtual-guest ---
+
+--- custom-lab-profile ---
+CPU Governor: CPU frequency scaling not available in virtual guest
+I/O Scheduler: [none] mq-deadline kyber bfq 
+vm.swappiness: vm.swappiness: 10
+
+=== Performance Test Results Summary ===
+--- balanced Stress Test Results ---
+Average Load:
+ 0.24, 0.17, 0.10
+ 0.38, 0.20, 0.11
+ 0.51, 0.23, 0.12
+ 0.63, 0.26, 0.13
+ 0.74, 0.29, 0.14
+ 0.94, 0.35, 0.16
+
+--- throughput-performance Stress Test Results ---
+Average Load:
+ 0.29, 0.27, 0.15
+ 0.43, 0.30, 0.16
+ 0.55, 0.33, 0.17
+ 0.67, 0.36, 0.18
+ 0.78, 0.39, 0.19
+ 0.87, 0.41, 0.20
+
+--- virtual-guest Stress Test Results ---
+Average Load:
+ 0.24, 0.32, 0.19
+ 0.38, 0.35, 0.20
+ 0.51, 0.38, 0.21
+ 0.63, 0.41, 0.22
+ 0.74, 0.43, 0.23
+ 0.84, 0.46, 0.24
+
+--- custom-lab-profile Stress Test Results ---
+Average Load:
+ 0.13, 0.32, 0.21
+ 0.28, 0.35, 0.22
+ 0.42, 0.37, 0.23
+ 0.71, 0.44, 0.25
+ 0.81, 0.46, 0.26
+ 0.91, 0.49, 0.27
+

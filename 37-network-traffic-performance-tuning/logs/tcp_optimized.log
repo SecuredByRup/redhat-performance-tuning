@@ -1,0 +1,7 @@
+=== New TCP Settings ===
+Date: Thu Oct 29 06:28:33 UTC 2026
+rmem_default: 262144
+rmem_max: 134217728
+wmem_default: 262144
+wmem_max: 134217728
+tcp_congestion_control: bbr

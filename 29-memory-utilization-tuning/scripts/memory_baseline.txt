@@ -1,0 +1,11 @@
+=== Memory Baseline Report ===
+Date: Tue Oct 27 14:18:24 UTC 2026
+
+Memory Information:
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       963Mi        13Gi        19Mi       644Mi        14Gi
+Swap:             0B          0B          0B
+
+Current swappiness: 60
+
+Swap Information:
